@@ -1,0 +1,71 @@
+/*
+	 Re Usable CSS Mixins
+ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  background-color: #f6f6f6f; }
+
+header {
+  height: 73px;
+  border-bottom: 2px solid #555; }
+  header h2 {
+    margin: 0;
+    line-height: 73px; }
+
+h1, h2, h3, h4 {
+  font-family: cambria, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  margin-top: 0; }
+
+h3 {
+  margin-top: 1.2em; }
+
+pre, code {
+  font-family: consolas, monaco;
+  background-color: #f6f6f6; }
+
+pre {
+  padding: 10px;
+  border-radius: 4px; }
+
+code {
+  padding: 0 3px;
+  border-radius: 3px; }
+
+p {
+  font-size: 1.2em;
+  font-family: sans-serif;
+  line-height: 1.5em;
+  color: #333; }
+
+footer {
+  height: 38px;
+  border-top: 1px solid #222; }
+  footer p {
+    text-align: center;
+    margin: 0;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 38px; }
+
+.box {
+  height: 100px;
+  width: 100px;
+  background: seagreen; }
+
+.round {
+  width: 100px;
+  height: 100px;
+  background: #bada55;
+  border-radius: 50%; }
+
+.rotated-box {
+  height: 100px;
+  width: 100px;
+  background: #25547b;
+  -webkit-transform: rotate(-35deg);
+  -webkit-transition: all 1s ease-in; }
+
+.rotated-box:hover {
+  -webkit-transform: rotate(180deg); }

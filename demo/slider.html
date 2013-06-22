@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS only Image slider</title>
+	<style type="text/css">
+		body{background-color: #e7e7e7; }
+		#main{ width: 800px; margin:100px auto; }
+		#slider{
+			position: relative;
+			width: 680px;
+			height: 240px;
+			border: 1px inset #ddd;
+			outline: 15px solid seagreen;
+			box-shadow: 18px 19px 19px #222;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		img{
+			float: left;
+			position: relative;
+		}
+
+		@-webkit-keyframes move{
+			10%{ margin-left: -680px; }
+			20%{ margin-left: -1360px; }
+			30%{ margin-left: -2040px; }
+			40%{ margin-left: -2720px; }
+			50%{ margin-left: -3400px; }
+			60%{ margin-left: -4080px; }
+			70%{ margin-left: -4760px; }
+			80%{ margin-left: -5440px; }
+			100%{ margin-left: -0px; }
+		}
+
+		img:after{
+			content: 'hello';
+		}
+
+		.img-wrapper{
+			width: 9999px;
+			margin-left: 0;
+			z-index: -1;
+			-webkit-animation: move 20s cubic-bezier(.87,-0.06,.18,1.6) infinite ;
+			counter-reset: img;
+		}
+
+		p{ font-size: 1.3em; font-family: Cambria; }
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="slider">
+			<div class="img-wrapper">
+				<img src="images/img.jpg" alt="">
+				<img src="images/img2.jpg" alt="">
+				<img src="images/img3.jpg" alt="">
+				<img src="images/img4.jpg" alt="">
+				<img src="images/img5.jpg" alt="">
+				<img src="images/img6.jpg" alt="">
+				<img src="images/img7.jpg" alt="">
+				<img src="images/img8.png" alt="">
+				<img src="images/img9.jpg" alt="">
+			</div>
+		</div>
+		<p>
+	 amet, consectetur adipisicing elit. Vero quaerat eius tempora ipsum placeat magnam omnis consequatur mollitia molestias saepe dolores praesentium deserunt dignissimos ex ullam est porro ea nisi nobis sapiente aliquam recusandae molestiae error veniam necessitatibus dolor perspiciatis. Consequuntur labore esse architecto veritatis neque ratione dolorum natus tempora quo distinctio aspernatur asperiores assumenda eius! Similique ratione blanditiis tempora corporis voluptate! Incidunt aspernatur quod rerum eveniet ratione laboriosam earum in deleniti. Ducimus molestiae maiores hic nisi tenetur asperiores facilis cupiditate libero ratione vitae beatae provident eaque eveniet reprehenderit omnis necessitatibus sapiente facere commodi quas officia. Totam culpa laboriosam dolorum iste architecto placeat hic voluptatem enim repellat quas commodi nihil explicabo accusantium officiis quod ab reprehenderit cumque harum autem reiciendis ex delectus unde? Expedita saepe similique repudiandae sint. Vitae hic at fugit minima debitis fugiat sapiente aut officiis et fuga voluptatibus doloribus voluptatum consequatur officia culpa nostrum id consequuntur. Sint velit ipsum commodi cupiditate eius minus voluptatum libero perferendis aliquid at quam incidunt atque ipsa voluptas iusto placeat earum assumenda sit. Nisi eos velit inventore reprehenderit cupiditate rem sapiente sit veniam ad voluptatum. Iusto esse quam dicta dolor cum doloribus ex iste quo modi perferendis voluptates quia sit! Rem voluptatem.
+		</p>
+	</div>
+</body>
+</html>

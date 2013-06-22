@@ -1,0 +1,122 @@
+/*
+ * CSS Actions
+ * Practicing CSS3 Good Girls
+ */
+
+@import 'mixins';
+
+// My Styles
+body{
+	background: #f6f6f6;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.cube{
+	position: relative;
+	top: 200px;
+
+	.top div, .left, .right{
+		padding: 10px;
+		width: 180px;
+		height: 180px;
+	}
+	.top, .left, .right{
+		position: absolute;
+	}
+
+	.left{
+	        -webkit-transform: skewY(30deg);
+	        -moz-transform: skewY(30deg);
+	        background-color: #ccc;
+	}
+
+	.right{
+	        -webkit-transform: skewY(-30deg);
+	        -moz-transform: skewY(-30deg);
+	        background-color: #ddd;
+	        left: 200px;
+	}
+
+	.top div {
+	        -webkit-transform: skewY(-30deg) scaleY(1.16);
+	        -moz-transform: skewY(-30deg) scaleY(1.16);
+	        background-color: #eee;
+	        font-size: 0.862em;
+	}
+
+	.top {
+	        -webkit-transform: rotate(60deg);
+	        -moz-transform: rotate(60deg);
+	        top: -158px;
+	        left: 100px;
+	}
+
+	@include transition;
+
+	&:hover{ -webkit-transform: rotateZ(360deg); }
+}
+
+
+h2{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	border-bottom: 1px solid #333;
+	color: #333;
+	margin-top: 0;
+}
+
+.box{
+	@include box(200px);
+}
+
+.area{
+	background: #e7e7e7;
+	box-shadow: 0 0 7px #222;
+	padding: 20px;
+	margin: 25px;
+}
+
+#circles{
+
+	section{
+		@include circle(10px, #25547b);
+		box-shadow: 0 0 5px #222;
+		top: 0;
+		left: 0;
+		-webkit-transition-property: left, top;
+		-webkit-transition-duration: 1s, 1s;
+		-webkit-transition-delay: 0s, 1s;
+
+	}
+
+}
+
+// Tranform
+.translate{
+
+	section{
+		@include box(120px);
+		-webkit-transform: skew(10deg);
+	}
+}
+
+
+
+
+.play{
+	&:nth-child(2) section{ @include transition($trans: ease); }
+	&:nth-child(3) section{ @include transition($trans: ease-in); }
+	&:nth-child(4) section{ @include transition($trans: ease-out); }
+	&:nth-child(5) section{ @include transition($trans: ease-in-out); }
+	&:nth-child(6) section{ @include transition($trans: linear); }
+	&:hover section{ margin-left:800px; @include rotate(180);  }
+}
+
+.play section{
+	@include box(50px);
+	margin:10px;
+	padding: 10px;
+}
+

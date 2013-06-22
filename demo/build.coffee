@@ -1,0 +1,1 @@
+make = -> "Make some coffee"

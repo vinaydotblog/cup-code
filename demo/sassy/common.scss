@@ -1,0 +1,54 @@
+/*
+	 Re Usable CSS Mixins
+ */
+
+@mixin radius($size : 5px){
+	border-radius: $size;
+}
+
+@mixin rotate($angle : 0deg) {
+	-webkit-transform: rotate($angle);
+}
+
+@mixin transition($args: all 1s ease-in) {
+	-webkit-transition: $args;
+}
+
+@mixin square( $size: 100px, $bg: seagreen ){
+	height: $size;
+	width: $size;
+	background: $bg;
+}
+
+@mixin circle( $radius: 50px, $bg: seagreen ){
+	width: $radius * 2;
+	height: $radius * 2;
+	background: $bg;
+	@include radius(50%);
+}
+
+@mixin basic-layout {
+	body{ font-family: Arial, Helvetica, sans-serif; width: 960px; margin: 0 auto; background-color: #f6f6f6f; }
+
+	header{
+		height:73px; border-bottom: 2px solid #555;
+		h2{ margin:0; line-height:73px; }
+	}
+
+	h1, h2, h3, h4{
+		font-family: cambria, Verdana, Geneva, Arial, Helvetica, sans-serif; margin-top:0;
+	}
+
+	h3{ margin-top: 1.2em; }
+
+	pre,code{ font-family: consolas, monaco; background-color: #f6f6f6; }
+	pre{ padding: 10px; border-radius: 4px; }
+	code{ padding: 0 3px; border-radius: 3px; }
+
+	p{ font-size: 1.2em; font-family: sans-serif; line-height:1.5em; color: #333; }
+
+	footer{
+		height:38px; border-top: 1px solid #222;
+		p{ text-align: center; margin:0; font-size: 0.8em; font-family: Arial, Helvetica, sans-serif; line-height: 38px; }
+	}
+}

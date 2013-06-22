@@ -1,0 +1,13 @@
+# Final Product
+
+- Nice server side file browser
+- Abilit to open files with ease.
+
+
+
+# Goal
+9:00 - Implement require js
+FTW - IT'S 10:00
+
+
+Structure CSS 

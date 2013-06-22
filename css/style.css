@@ -1,0 +1,192 @@
+/*
+ * IDE
+ */
+/*
+ * Global Values Declared
+ */
+/* Tree List */
+/*
+ * Fiew more mixins
+ */
+.clearfix, .tabs {
+  *zoom: 1; }
+  .clearfix:before, .tabs:before, .clearfix:after, .tabs:after {
+    content: "";
+    display: table;
+    line-height: 0; }
+  .clearfix:after, .tabs:after {
+    clear: both; }
+
+/*
+ * Custom Webkit Scrollbars
+ */
+/*
+ * Windows Based UI
+ */
+/*
+ * Tabs CSS
+ */
+.tabs {
+  background-color: #ddd;
+  -webkit-user-select: none;
+  min-height: 49px;
+  height: 49px;
+  overflow: hidden; }
+  .tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    background: #eee; }
+  .tabs li {
+    float: left;
+    -webkit-transition: top 200ms, width 100ms ease-in 100ms;
+    position: relative; }
+    .tabs li span {
+      color: lightGrey;
+      cursor: pointer;
+      position: absolute;
+      right: 15px;
+      font-family: Arial;
+      font-size: 10px;
+      top: 4px;
+      font-weight: bold; }
+  .tabs li a {
+    color: white;
+    text-decoration: none;
+    font-family: cambria;
+    float: left;
+    background-color: #555;
+    color: #eee;
+    padding: 10px 35px;
+    border-top-left-radius: 25px 44px;
+    border-top-right-radius: 25px 44px;
+    box-shadow: 0px -2px 0px #222;
+    cursor: default; }
+    .tabs li a:hover {
+      box-shadow: 0px -2px 3px #222; }
+  .tabs li.active {
+    z-index: 100; }
+  .tabs li.active a {
+    background-color: #222;
+    box-shadow: 0px -2px 3px #222; }
+  .tabs li.hide {
+    top: 50px;
+    width: 0; }
+  .tabs li.hidden {
+    top: 50px; }
+
+/*
+ * Tree File Structure
+ */
+.fs-sidebar {
+  -webkit-user-select: none;
+  background-color: #eeeeee;
+  border-right: 1px solid #222;
+  cursor: pointer;
+  float: left;
+  height: 100%;
+  overflow: scroll;
+  width: 300px; }
+
+ul.treelist {
+  list-style-type: none;
+  display: none; }
+  ul.treelist ul {
+    display: none; }
+  ul.treelist li {
+    list-style: none;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 16px; }
+  ul.treelist .file.active {
+    background: grey;
+    color: white; }
+  ul.treelist .dir div {
+    position: relative; }
+  ul.treelist .file div, ul.treelist .dir div {
+    padding: 2px 20px; }
+  ul.treelist .dir span {
+    background-image: url(../img/arrows.png);
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    left: 5px; }
+  ul.treelist .opened.dir > div > span {
+    background-position-y: 10px; }
+
+html, body {
+  overflow: hidden; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 10px; }
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-color: #fff; }
+
+::-webkit-scrollbar-track-piece {
+  background-color: #ddd;
+  -webkit-border-radius: 3px; }
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: #ccc;
+  -webkit-border-radius: 3px; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 50px;
+  background-color: #ccc;
+  -webkit-border-radius: 3px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#main {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; }
+
+#inputDir {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  color: white;
+  opacity: 0; }
+
+.content-warpper {
+  height: 100%;
+  margin-left: 300px;
+  overflow: hidden;
+  background: #f56565; }
+
+#content {
+  font-family: calibri;
+  background: #f7f7f7; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+/* Main Code of our IDE */
+.content {
+  position: relative;
+  height: 100%;
+  /* Every single document - Code file */ }
+  .content .document {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; }

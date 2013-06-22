@@ -1,0 +1,29 @@
+/*
+ * Dictionary Styles
+ * @package API
+ * @team vinnizworld
+ */
+
+body{
+	margin: 0;
+	background-color: #f6f6f6;
+	font-family: cambria;
+}
+
+#main{
+	width: 800px;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #f2f2f2;
+	box-shadow: 0 0 1px #222;
+}
+
+h1,h2,h3,h4,h5{
+	margin-top: .2em;
+	margin-bottom: .8em;
+	font-weight: normal;
+}
+
+#DictForm{
+	width: 100%;
+}

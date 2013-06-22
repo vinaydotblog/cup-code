@@ -1,0 +1,23 @@
+// Sassy Mixins
+
+@import 'sassy/common';
+
+@include basic-layout;
+
+.box{
+	@include square;
+}
+
+.round{
+	@include circle($bg : #bada55);
+}
+
+.rotated-box{
+	@include square($bg: #25547b);
+	@include rotate(-35deg);
+	@include transition;
+}
+
+.rotated-box:hover {
+	@include rotate(180deg);
+}

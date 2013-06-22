@@ -1,0 +1,42 @@
+/*
+ * Pure CSS
+ * @team vinnizworld
+ */
+
+ @import 'mixins';
+
+$orange: #f7941d;
+
+body{
+	background: $orange;
+}
+
+.box{
+	@include box(100px);
+	@include bordered;
+}
+
+.circle{
+	@include circle(3em);
+	@include bordered;
+}
+
+img{
+	@include bordered;
+}
+
+a.img{
+	@include img-titled;
+}
+
+a{
+	 @include tooltip;
+}
+
+span{
+	@extend a;
+}
+
+a.tool{
+	@include tooltip;
+}

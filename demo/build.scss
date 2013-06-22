@@ -1,0 +1,8 @@
+// some sassy thing
+$sass : 'This is working';
+
+@import 'mixins';
+
+.box{
+	@include rotate;
+}

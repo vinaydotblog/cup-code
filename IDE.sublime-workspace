@@ -1,0 +1,479 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"edit",
+				"editor"
+			],
+			[
+				"edi",
+				"editor"
+			],
+			[
+				"main",
+				"main_document"
+			],
+			[
+				"Co",
+				"CodeMirror"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"tab",
+				"tab_wrapper"
+			],
+			[
+				"act",
+				"active"
+			],
+			[
+				"appe",
+				"appendChild"
+			],
+			[
+				"rem",
+				"removeClass"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"baco",
+				"background-color"
+			],
+			[
+				"hm",
+				"htmlmixed"
+			],
+			[
+				"ex",
+				"extentions"
+			],
+			[
+				"cur",
+				"currentIDEFile"
+			],
+			[
+				"cu",
+				"currentFile"
+			],
+			[
+				"pie",
+				"pieces"
+			],
+			[
+				"acti",
+				"activeFile"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"lissty",
+				"list-style-type"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"pi",
+				"piece"
+			],
+			[
+				"creat",
+				"createFrag"
+			],
+			[
+				"pic",
+				"pieces"
+			],
+			[
+				"Crea",
+				"Creating"
+			],
+			[
+				"F",
+				"Filesytem"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"file",
+				"filesystem"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Better CoffeeScript/CoffeeScript.sublime-build",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"arti",
+				"Laravel Artisan Command"
+			],
+			[
+				"laravel",
+				"Laravel Artisan Command"
+			],
+			[
+				"resou",
+				"Laravel Generate: Resource"
+			],
+			[
+				"resour",
+				"Laravel Generate: Resource"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"genere",
+				"Laravel Generate: Resource"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"inST",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 417.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/bin/apache/Apache2.2.21/conf/extra/httpd-vhosts.conf",
+		"/C/wamp/www/story3/application/controllers/assessment.php",
+		"/C/wamp/www/story3/application/routes.php",
+		"/C/wamp/www/story3/application/config/application.php",
+		"/C/wamp/www/story3/task.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/wamp/www/ace/dawn.html",
+		"/C/wamp/www/ace/build/src-min-noconflict/ext-emmet.js",
+		"/C/wamp/www/ace/build/src/ext-emmet.js",
+		"/C/wamp/www/ace/build/src/ace.js",
+		"/C/wamp/www/ace/demo/keyboard_shortcuts.html",
+		"/C/wamp/www/apps/editor/index.php",
+		"/C/wamp/www/ace/build/src-noconflict/ext-emmet.js",
+		"/C/wamp/www/ace/build/kitchen-sink/demo.js",
+		"/C/wamp/www/ace/emmet.js",
+		"/C/wamp/www/ace/lib/ace/ext/emmet.js",
+		"/C/wamp/www/ace/demo/kitchen-sink/require.js",
+		"/C/wamp/www/ace/lib/ace/snippets/apache.snippets",
+		"/C/wamp/www/ace/build/kitchen-sink/docs/coffeescript.coffee",
+		"/C/wamp/www/ace/lib/ace/snippets/coffee.snippets",
+		"/C/wamp/www/ace/demo/requirejs+build.html",
+		"/C/wamp/www/ace/build/src-min/ext-emmet.js",
+		"/C/wamp/www/story3/application/controllers/members.php",
+		"/C/wamp/www/story3/public/js/main.coffee",
+		"/C/wamp/www/story3/application/controllers/tasks.php",
+		"/C/wamp/www/story3/application/views/home/task.blade.php",
+		"/C/wamp/www/story3/application/models/member.php",
+		"/C/wamp/www/story3/application/controllers/home.php",
+		"/C/wamp/www/story3/application/views/tasks.blade.php",
+		"/C/wamp/www/story/taskApp.txt",
+		"/C/wamp/www/story/taskApp.txxt",
+		"/C/wamp/www/story/application/config/database.php",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/sublime-laravelgenerator/laravelgenerator.sublime-settings",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/sublime-laravelgenerator/generate.py",
+		"/C/wamp/www/story/public/js/app.js",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/CoffeeCompile/CoffeeCompile.sublime-settings",
+		"/C/wamp/www/story/application/views/app/bb.blade.php",
+		"/C/wamp/www/story/application/controllers/app.php",
+		"/C/wamp/www/story/application/routes.php",
+		"/C/wamp/www/story/start.md",
+		"/C/wamp/www/story/public/js/app.coffee",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/User/CoffeeCompile.sublime-settings",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/CoffeeCompile/Keymaps/Default (Windows).sublime-keymap",
+		"/C/wamp/www/story/application/config/application.php",
+		"/C/wamp/www/story/application/views/bb.blade.php",
+		"/C/wamp/www/story/.htaccess",
+		"/C/Users/Vinay/.bash_profile",
+		"/C/wamp/www/story/application/tasks/generate.php",
+		"/C/wamp/www/story/application/helpers/helpers.php",
+		"/C/wamp/www/story/application/controllers/old.php",
+		"/C/wamp/www/boiler/application/controllers/ideas.php",
+		"/C/wamp/www/sqlmine/index.php",
+		"/C/wamp/www/sqlmine/database.php",
+		"/C/wamp/www/mimic.php",
+		"/C/wamp/www/node/terminal/app.js",
+		"/C/wamp/www/story/application/helpers/wideimage.php",
+		"/E/Tuts/backbone/9-collection-views/9-collection-views/index.html",
+		"/C/wamp/www/IDE/js/fs.js",
+		"/C/wamp/www/IDE/css/style.scss",
+		"/C/wamp/www/IDE/css/tabs.scss",
+		"/C/wamp/www/IDE/js/tabs.js",
+		"/C/wamp/www/IDE/css/mixins.scss",
+		"/C/wamp/www/IDE/index.html",
+		"/C/wamp/www/IDE/js/codemirror/codemirror.css",
+		"/C/wamp/www/IDE/css/style.css",
+		"/C/wamp/www/IDE/css/scrollbars.scss",
+		"/C/wamp/www/sourcemap/maps/start/index.html",
+		"/C/wamp/www/sourcemap/maps/start/scripts/script.closure.js",
+		"/C/wamp/www/sourcemap/maps/start/scripts/script.closures.js",
+		"/C/Users/Vinay/Desktop/css3/active_model.rb",
+		"/C/wamp/www/IDE/js/www_dir.json",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\",
+			"emmet",
+			"window",
+			"\\",
+			"ace",
+			"\\",
+			"define",
+			"\\",
+			",",
+			"\\",
+			"C",
+			"click",
+			"php",
+			"console",
+			"pieces[i]",
+			"down",
+			"page_down"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 355.0
+	},
+	"output.exec":
+	{
+		"height": 191.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"emmet",
+				"ace/build/src-noconflict/ext-emmet.js"
+			],
+			[
+				"kidemo",
+				"ace/build/kitchen-sink/demo.js"
+			],
+			[
+				"require",
+				"ace/demo/kitchen-sink/require.js"
+			],
+			[
+				"emme",
+				"ace/lib/ace/ext/emmet.js"
+			],
+			[
+				"ace",
+				"ace/build/src/ace.js"
+			],
+			[
+				"coffee",
+				"ace/lib/ace/snippets/coffee.snippets"
+			],
+			[
+				"builsrcace",
+				"ace/build/src/ace.js"
+			],
+			[
+				"requirejs",
+				"ace/demo/kitchen-sink/require.js"
+			],
+			[
+				"emmet.js",
+				"ace/build/src/ext-emmet.js"
+			],
+			[
+				"aceextemm",
+				"ace/build/src-min/ext-emmet.js"
+			],
+			[
+				"routes",
+				"application/routes.php"
+			],
+			[
+				"appli",
+				"application/config/application.php"
+			],
+			[
+				"route",
+				"application/routes.php"
+			],
+			[
+				"bb",
+				"application/views/app/bb.blade.php"
+			],
+			[
+				"codemi",
+				"IDE/js/codemirror/codemirror.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/wamp/www/IDE/IDE.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true
+}

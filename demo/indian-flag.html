@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Number</title>
+  <style>
+    .flag{ width: 400px; height: 240px; box-shadow: 1px 2px 5px #222; }
+    .m, .w, .g{ outline: 1px solid; height: 80px; }
+    .m{ background: orange; }
+    .g{ background: seagreen; }
+    .w{ position: relative; }
+    .w .c{ position: absolute; left: 165px; top: 4px; border: 1px solid; 
+      height: 70px; width:  70px; margin: 0 auto; border-radius: 50%; background-color: transparent; }
+    .w .c div{ width: 68px; height: 0; border: 1px solid; top: 35px; position: absolute; }
+    .w .c div:nth-child(1){ -webkit-transform: rotate(30deg); }
+    .w .c div:nth-child(2){ -webkit-transform: rotate(60deg); }
+    .w .c div:nth-child(3){ -webkit-transform: rotate(90deg); }
+    .w .c div:nth-child(4){ -webkit-transform: rotate(120deg); }
+    .w .c div:nth-child(5){ -webkit-transform: rotate(150deg); }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <div class="m"></div>
+    <div class="w">
+      <div class="c">
+        <div class="l"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+        <div class="l"></div>
+      </div>
+    </div>
+    <div class="g"></div>
+  </div>
+</body>
+</html>

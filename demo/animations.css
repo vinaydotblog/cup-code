@@ -1,0 +1,29 @@
+/*
+ * Animations on Shapes
+ * @package Build
+ * @author Vinay Aggarwal
+ */
+
+@-webkit-keyframes rotate{
+
+	50%{
+		-webkit-transform: rotate(360deg);
+		margin-left: 130px;
+		background-color: #222;
+	}
+
+}
+
+@-webkit-keyframes move{
+	0%{
+
+	}
+}
+
+.box{
+	-webkit-animation: rotate 2s infinite;
+}
+
+.right-triangle{
+
+}

@@ -1,0 +1,119 @@
+/*
+ * CSS Actions
+ * Practicing CSS3 Good Girls
+ */
+body {
+  background: #f6f6f6;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0; }
+
+.cube {
+  position: relative;
+  top: 200px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+  .cube .top div, .cube .left, .cube .right {
+    padding: 10px;
+    width: 180px;
+    height: 180px; }
+  .cube .top, .cube .left, .cube .right {
+    position: absolute; }
+  .cube .left {
+    -webkit-transform: skewY(30deg);
+    -moz-transform: skewY(30deg);
+    background-color: #ccc; }
+  .cube .right {
+    -webkit-transform: skewY(-30deg);
+    -moz-transform: skewY(-30deg);
+    background-color: #ddd;
+    left: 200px; }
+  .cube .top div {
+    -webkit-transform: skewY(-30deg) scaleY(1.16);
+    -moz-transform: skewY(-30deg) scaleY(1.16);
+    background-color: #eee;
+    font-size: 0.862em; }
+  .cube .top {
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    top: -158px;
+    left: 100px; }
+  .cube:hover {
+    -webkit-transform: rotateZ(360deg); }
+
+h2 {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  border-bottom: 1px solid #333;
+  color: #333;
+  margin-top: 0; }
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: seagreen; }
+
+.area {
+  background: #e7e7e7;
+  box-shadow: 0 0 7px #222;
+  padding: 20px;
+  margin: 25px; }
+
+#circles section {
+  width: 20px;
+  height: 20px;
+  background: #25547b;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #222;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: left, top;
+  -webkit-transition-duration: 1s, 1s;
+  -webkit-transition-delay: 0s, 1s; }
+
+.translate section {
+  width: 120px;
+  height: 120px;
+  background: seagreen;
+  -webkit-transform: skew(10deg); }
+
+.play:nth-child(2) section {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+.play:nth-child(3) section {
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
+.play:nth-child(4) section {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+.play:nth-child(5) section {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+.play:nth-child(6) section {
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear; }
+.play:hover section {
+  margin-left: 800px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.play section {
+  width: 50px;
+  height: 50px;
+  background: seagreen;
+  margin: 10px;
+  padding: 10px; }
