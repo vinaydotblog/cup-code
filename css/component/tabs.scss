@@ -12,7 +12,7 @@
 	overflow: hidden;
 
 	ul {
-		@include mixin-unstyle;
+		@include list-unstyle;
 		margin-top: 10px;
 		background: #eee;
 	}

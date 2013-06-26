@@ -3,7 +3,7 @@
  */
 
 
-@mixin mixin-unstyle {
+@mixin list-unstyle {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -22,17 +22,3 @@
   opacity: $val;
   
 }
-
-.clearfix {
-    *zoom: 1;
-    &:before,
-    &:after {
-        content: "";
-        display: table;
-        line-height: 0;
-    }
-    &:after {
-        clear: both;
-    }
-}
- 

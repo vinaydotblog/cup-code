@@ -1,1 +1,1 @@
-scss --watch css/style.scss:css/style.css
+scss --sourcemap --watch css/style.scss:css/style.css

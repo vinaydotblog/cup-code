@@ -1,10 +1,14 @@
 
 // Define Mixins here...
 
-@mixin box($size: 100px, $bg: seagreen){
-	width: $size;
-	height: $size;
+@mixin box($width: 100px, $hight  : 100px , $bg: seagreen){
+	width: $width;
+	height: $height;
 	background: $bg;
+}
+
+@mixin square(@size : 100px , @bg : seagreen) {
+	@include box( $size, $size, $bg );
 }
 
 @mixin transition($what:all, $time: 1s, $trans: ease){

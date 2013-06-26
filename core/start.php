@@ -22,15 +22,11 @@
 		<!-- Context Menu -->
 		<?php // require 'contextmenu.php'; ?>
 
-		<div class="content-warpper">
+		<div id="content_wrapper" class="content-warpper">
 
-			<div id="tabs" class="tabs">
-				<ul>
-				</ul>
-			</div>
-			<!-- End Tabs -->
+			<?php require 'tabs.php'; ?>
 
-			<div id="content" class="content">
+			<div id="content" class="content main_content">
 				
 				<div class="document main">
 					<div name="" style="width:100%; height: 100%;" class="main" id="first_document"></div>

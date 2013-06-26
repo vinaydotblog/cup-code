@@ -1,0 +1,61 @@
+/*
+ * Useful SASS mixins
+ * http://sachagreif.com/useful-sass-mixins/
+ */
+
+
+
+/*--------------------------------/
+	Diff shades of black/white
+	Usage: black(0.15), white(0.9)
+/--------------------------------*/
+
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+
+
+/*--------------------------------/
+		Emboss & Letterpress
+	Usage: @include box-emboss(0.8, 0.05);
+/--------------------------------*/
+
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+/*--------------------------------/
+		Hide Text / IR
+/--------------------------------*/
+
+@mixin hide-text{
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+/*--------------------------------/
+	Horizontal Navigation Lists
+/--------------------------------*/
+
+@mixin navigation-list {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        display:block;
+        float:left;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}

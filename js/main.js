@@ -19,7 +19,12 @@ require.config({
 		Get Started with
 /--------------------------------*/
 
-require(['jquery', 'ace/ace','libs/emmet','ace/ext/emmet','modules/treelist'], function($, a, x, emmet_rjs, tl){
+require(
+	[
+		'jquery', 'ace/ace','libs/emmet',
+		'ace/ext/emmet','modules/treelist',
+		'modules/tabs', 'modules/server_fs'
+	], function($, a, x, emmet_rjs, tl, tabs){
 
 	// Apply ACE Editor
 	var editor = a.edit('first_document');
@@ -60,8 +65,16 @@ require(['jquery', 'ace/ace','libs/emmet','ace/ext/emmet','modules/treelist'], f
 	/*--------------------------------/
 		Tree List for FileSystem
 	/--------------------------------*/
+	
+	$(document).on('hoho',function(){
+		$('.treelist_wrapper').treelist();
+	});
 
-	$('.treelist').treelist();
+	/*--------------------------------/
+			Implement Tabs
+	/--------------------------------*/
+	$('#content_wrapper').tabbed();
+
 
 
 });	

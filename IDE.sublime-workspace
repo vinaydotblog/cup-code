@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"chi",
+				"children"
+			],
+			[
+				"li",
+				"lis"
+			],
+			[
+				"div",
+				"divs_length"
+			],
+			[
+				"ac",
+				"activeFile"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"inle",
+				"inline-block"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
 				"html",
 				"htmlentities"
 			],
@@ -28,10 +56,6 @@
 				"pos:a	position:absolute"
 			],
 			[
-				"ac",
-				"active"
-			],
-			[
 				"tab",
 				"tab_wrapper"
 			],
@@ -46,10 +70,6 @@
 			[
 				"rem",
 				"removeClass"
-			],
-			[
-				"ba",
-				"background-color"
 			],
 			[
 				"baco",
@@ -143,13 +163,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/modules/treelist.js",
+			"settings":
+			{
+				"buffer_size": 1060,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 912,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Better CoffeeScript/CoffeeScript.sublime-build",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"fe",
+				"Fetch: Manage"
+			],
 			[
 				"arti",
 				"Laravel Artisan Command"
@@ -199,7 +239,7 @@
 				"Set Syntax: JSON"
 			]
 		],
-		"width": 432.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -216,6 +256,26 @@
 	},
 	"file_history":
 	[
+		"/c/wamp/www/IDE/watch.bat",
+		"/C/wamp/www/IDE/css/style.scss",
+		"/C/wamp/www/IDE/css/src/vendors/blackbe/shapes.scss",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/wamp/www/IDE/css/src/vendors/dmitryf/elements.less",
+		"/C/Users/Vinay/AppData/Roaming/Sublime Text 2/Packages/User/comment_head.sublime-snippet",
+		"/C/wamp/www/IDE/css/src/vendors/sachagreif/mixins.scss",
+		"/C/wamp/www/IDE/js/main.js",
+		"/C/wamp/www/IDE/core/filesystem.php",
+		"/C/wamp/www/IDE/css/src/scrollbars.scss",
+		"/C/wamp/www/IDE/css/component/filesystem.scss",
+		"/C/wamp/www/IDE/css/vars.scss",
+		"/c/wamp/www/IDE/README",
+		"/C/wamp/www/IDE/making/treelist.html",
+		"/C/wamp/www/IDE/js/modules/treelist.js",
+		"/C/wamp/www/IDE/making/treelist-main.js",
+		"/C/wamp/www/IDE/watch.bat",
+		"/C/wamp/www/IDE/IDE.sublime-workspace",
+		"/C/wamp/www/IDE/IDE.sublime-project",
 		"/C/wamp/bin/apache/Apache2.2.21/conf/extra/httpd-vhosts.conf",
 		"/C/wamp/www/story3/application/controllers/assessment.php",
 		"/C/wamp/www/story3/application/routes.php",
@@ -274,7 +334,6 @@
 		"/C/wamp/www/story/application/helpers/wideimage.php",
 		"/E/Tuts/backbone/9-collection-views/9-collection-views/index.html",
 		"/C/wamp/www/IDE/js/fs.js",
-		"/C/wamp/www/IDE/css/style.scss",
 		"/C/wamp/www/IDE/css/tabs.scss",
 		"/C/wamp/www/IDE/js/tabs.js",
 		"/C/wamp/www/IDE/css/mixins.scss",
@@ -307,6 +366,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"();\n",
+			"class=\"file\"",
+			"<a ",
 			"\\",
 			"emmet",
 			"window",
@@ -343,6 +405,60 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/modules/treelist.js",
+					"settings":
+					{
+						"buffer_size": 1060,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.scss",
+					"settings":
+					{
+						"buffer_size": 912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -385,6 +501,10 @@
 	{
 		"height": 191.0
 	},
+	"output.unsaved_changes":
+	{
+		"height": 526.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -395,6 +515,46 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"var",
+				"css/vars.scss"
+			],
+			[
+				"treeli",
+				"js/modules/treelist.js"
+			],
+			[
+				"tree",
+				"making/treelist.html"
+			],
+			[
+				"main",
+				"js/main.js"
+			],
+			[
+				"filephp",
+				"core/filesystem.php"
+			],
+			[
+				"scrollba",
+				"css/src/scrollbars.scss"
+			],
+			[
+				"treelis",
+				"js/modules/treelist.js"
+			],
+			[
+				"treelisjs",
+				"js/modules/treelist.js"
+			],
+			[
+				"tree.",
+				"making/treelist.html"
+			],
+			[
+				"filesy",
+				"css/component/filesystem.scss"
+			],
 			[
 				"emmet",
 				"ace/build/src-noconflict/ext-emmet.js"

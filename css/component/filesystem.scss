@@ -30,6 +30,7 @@ ul.treelist {
 
 	.file.active {
 		background: grey;
+        @include linear-gradient(to top, grey, #aaa);
 		color: white;
 	}
 
