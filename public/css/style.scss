@@ -1,0 +1,62 @@
+/*
+ * IDE
+ */
+
+@import 'vars';
+
+// Import Common UI
+@import 'src/mixins';
+@import 'src/scrollbars';
+@import 'src/window';
+@import 'bourbon/bourbon';
+@import 'src/classes';
+
+// Import Application Specific Components
+@import 'component/tabs';
+@import 'component/filesystem';
+
+
+@include scrollbar-thin;
+
+// Normalize CSS
+// @import 'src/normalize';
+
+body{ margin: 0; padding: 0; }
+
+// Make Fixed Window
+#main { @include fixed-screen; }
+
+#inputDir {
+	position: fixed;
+	right : 20px;
+	bottom : 20px;
+	z-index: 100;
+	color: white;
+	opacity : 0;
+}
+
+.content-warpper {
+	height : 100%;
+	margin-left : 300px;
+	overflow : hidden;
+	background: #f56565;
+}
+
+#content {
+	font-family: calibri;
+	background: #f7f7f7;
+}
+
+/* Main Code of our IDE */
+.content{
+	position: relative;
+	height: 100%;
+
+	/* Every single document - Code file */
+	.document {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+	}
+}

@@ -1,0 +1,55 @@
+/*------------------------------/
+		File Menu
+/------------------------------*/
+
+// Menu Wrapper
+.file-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	font-family: Arial;
+	font-size: 0.8em;
+
+	// All Item Wrappers
+	ul {
+		list-style-type: none;
+	}
+
+	li, a {
+	}
+
+	a {
+		background-color: #222;
+		display: block;
+		color: white;
+		text-decoration: none;
+		padding: 5px 10px;
+		white-space: nowrap;
+	}
+
+	ul.opened {
+		li:hover ul {
+			display: block;
+		}
+	}
+
+	li {
+		position: relative;
+		float: left;
+		border-bottom: 1px double #ddd;
+		border-right: 1px double #ddd;
+		box-shadow: 1px 1px 5px #ddd;
+
+
+		ul {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			display: none;
+
+			li, a { float: none; width: 100%; display: block; }
+		}
+	}
+}

@@ -1,0 +1,54 @@
+/*
+ * Tree File Structure
+ */
+
+
+.fs-sidebar {
+	-webkit-user-select: none;
+	background-color: $file-sidebar-color ;
+	border-right: 1px solid #222;
+	cursor: pointer;
+	float : left;
+	height: 100%;
+	overflow: scroll;
+	width: 300px;
+}
+
+
+ul.treelist {
+	list-style-type: none;
+	display: none;
+
+	ul{ display: none; }
+
+	li {
+		list-style: none;
+		font-family: $treelist-font;
+		font-size: $treelist-fontSize;
+		line-height: $treelist-lineHeight;
+	}
+
+	.file.active {
+		background: grey;
+        @include linear-gradient(to top, grey, #aaa);
+		color: white;
+	}
+
+	.dir div{ position: relative; }
+
+	.file div, .dir div { padding: 2px 20px; }
+
+	.dir span{
+		background-image: $img-arrow;
+		position: absolute;
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		top: 4px;
+		left: 5px;
+	}
+
+	.opened.dir > div > span {
+		background-position-y: 10px;
+	}
+}

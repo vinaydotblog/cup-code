@@ -1,0 +1,19 @@
+/*
+ * @package vinnizworld/assets
+ * Extendable useful classes
+ */
+
+
+.clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
+ 

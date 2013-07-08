@@ -1,0 +1,24 @@
+/*
+ * Fiew more mixins
+ */
+
+
+@mixin list-unstyle {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin opacity($val : 1){
+  /* For IE8 */
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=#{$val * 100})";
+  /* for IE 5-7 */
+  filter: unquote("alpha(opacity:#{$val * 100})");
+  /* Netscape */
+  -moz-opacity: $val;
+  /* Safari 1.x */
+  -khtml-opacity: $val;
+  
+  opacity: $val;
+  
+}

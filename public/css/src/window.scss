@@ -1,0 +1,7 @@
+/*
+ * Windows Based UI
+ */
+
+@mixin fixed-screen {
+	position: absolute; height: 100%; top: 0; left: 0; width: 100%; overflow : hidden;
+}
