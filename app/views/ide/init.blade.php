@@ -18,7 +18,7 @@
 		<input id="inputDir" type="file" webkitDirectory>
 		
 		<!-- File Menu -->
-		
+		@include('ide/filemenu');
 
 		<!-- Left Side File Browser -->
 		@include('ide/filesystem')

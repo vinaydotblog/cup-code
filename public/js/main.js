@@ -86,6 +86,18 @@ require(
 	// });
 
 	/*--------------------------------/
+			File Menu
+	/--------------------------------*/
+
+	$('#file-menu').appendTo('body')
+	.show()
+	.children('ul')
+	.on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('opened');
+	});
+
+	/*--------------------------------/
 			Implement Tabs
 	/--------------------------------*/
 	$('#content_wrapper').tabbed();

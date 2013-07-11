@@ -2,13 +2,13 @@
  Notifications
  */
 
-define(['jquery','libs/jquery.noty','libs/noty/inline' ,'libs/noty/theme','libs/noty/bottomLeft','libs/noty/bottomRight'], function($){
+define(['jquery','libs/jquery.noty','libs/noty/inline' ,'libs/noty/theme','libs/noty/bottomLeft','libs/noty/bottomRight','libs/noty/bottomLeft','libs/noty/bottom'], function($){ 
 
-    $.noty.defaults.timeout = 20000;
+    $.noty.defaults.timeout = 80000;
 
     window.notify = function(msg, type){
         return noty({
-            layout : 'bottomRight',
+            layout : 'bottom',
             type : type || 'alert',
             text : msg || 'Some notification!'
         });

@@ -15,3 +15,11 @@ Route::get('/', 'IDEController@init');
 Route::resource('cup-code', 'CupCodeController');
 Route::resource('projects', 'ProjectsController');
 Route::resource('file', 'FilesController');
+
+Route::get('phpinfo', function(){
+	return phpinfo();
+});
+
+Route::get('version', function(){
+	return phpversion();
+});

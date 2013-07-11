@@ -1,4 +1,4 @@
-<div id="file-menu" style="display:none;" class="file-menu">
+<div id="file-menu" class="file-menu" style="display: none;">
 	<ul>
 		<li>
 			<a href="#">File</a>
