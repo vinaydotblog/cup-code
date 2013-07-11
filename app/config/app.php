@@ -115,6 +115,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 		'Basset\BassetServiceProvider',
+		'Fideloper\Proxy\ProxyServiceProvider',
 
 	),
 
