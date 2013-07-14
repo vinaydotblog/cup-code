@@ -8,6 +8,16 @@
 /*
  * Fiew more mixins
  */
+/*
+ * Custom Webkit Scrollbars
+ */
+/*
+ * Windows Based UI
+ */
+/*
+ * @package vinnizworld/assets
+ * Extendable useful classes
+ */
 .clearfix, .tabs {
   *zoom: 1; }
   .clearfix:before, .tabs:before, .clearfix:after, .tabs:after {
@@ -17,12 +27,6 @@
   .clearfix:after, .tabs:after {
     clear: both; }
 
-/*
- * Custom Webkit Scrollbars
- */
-/*
- * Windows Based UI
- */
 /*
  * Tabs CSS
  */
@@ -121,6 +125,49 @@ ul.treelist {
   ul.treelist .opened.dir > div > span {
     background-position-y: 10px; }
 
+/*------------------------------/
+		File Menu
+/------------------------------*/
+.file-menu {
+  width: 100%;
+  font-family: Arial;
+  font-size: 0.8em; }
+  .file-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .file-menu ul li.opened ul {
+      display: block; }
+  .file-menu a {
+    background-color: #222;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    white-space: nowrap; }
+  .file-menu li {
+    position: relative;
+    float: left;
+    border-right: 1px double #ddd; }
+    .file-menu li ul {
+      top: 100%;
+      left: 0;
+      display: none; }
+    .file-menu li li, .file-menu li a {
+      float: none;
+      width: 100%;
+      display: block; }
+    .file-menu li li.divider a {
+      line-height: 0;
+      border-top: 1px solid grey;
+      padding: 0; }
+    .file-menu li i {
+      text-align: right;
+      margin-left: 20px;
+      display: inline-block;
+      font-size: 12px;
+      color: #C4C4C4; }
+
 html, body {
   overflow: hidden; }
 
@@ -180,10 +227,6 @@ body {
   font-family: calibri;
   background: #f7f7f7; }
 
-ul {
-  padding: 0;
-  margin: 0; }
-
 /* Main Code of our IDE */
 .content {
   position: relative;
@@ -194,107 +237,3 @@ ul {
     width: 100%;
     height: 100%;
     top: 0; }
-
-
-
-
-// Menu Wrapper
-.file-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  font-family: Arial;
-  font-size: 0.8em;
-
-  // All Item Wrappers
-  ul {
-    list-style-type: none;
-  }
-
-  li, a {
-  }
-
-  a {
-    background-color: #222;
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    white-space: nowrap;
-  }
-
-  ul.opened {
-    li:hover ul {
-      display: block;
-    }
-  }
-
-  li {
-    position: relative;
-    float: left;
-    border-bottom: 1px double #ddd;
-    border-right: 1px double #ddd;
-    box-shadow: 1px 1px 5px #ddd;
-
-
-    ul {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      display: none;
-
-      li, a { float: none; width: 100%; display: block; }
-    }
-  }
-}
-// Menu Wrapper
-.file-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  font-family: Arial;
-  font-size: 0.8em;
-}
-  // All Item Wrappers
-  .file-menu ul {
-    list-style-type: none;
-  }
-
-  .file-menu li, .file-menu a {
-  }
-
-  .file-menu a {
-    background-color: #222;
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    white-space: nowrap;
-  }
-
-
-  .file-menu ul.opened li:hover ul {
-    display: block;
-  }
-
-  .file-menu li {
-    position: relative;
-    float: left;
-    border-bottom: 1px double #ddd;
-    border-right: 1px double #ddd;
-    box-shadow: 1px 1px 5px #ddd;
-  }
-
-
-.file-menu li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-  }
-
-.file-menu li ul li,.file-menu li ul a { float: none; width: 100%; display: block; }

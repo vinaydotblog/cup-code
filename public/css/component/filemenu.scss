@@ -2,22 +2,21 @@
 		File Menu
 /------------------------------*/
 
+
 // Menu Wrapper
 .file-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 100%;
-	z-index: 1000;
 	font-family: Arial;
 	font-size: 0.8em;
 
-	// All Item Wrappers
+	// Reset list styling
 	ul {
 		list-style-type: none;
-	}
-
-	li, a {
+		margin: 0;
+		padding: 0;
+		li.opened ul {
+			display: block;
+		}
 	}
 
 	a {
@@ -26,30 +25,41 @@
 		color: white;
 		text-decoration: none;
 		padding: 5px 10px;
-		white-space: nowrap;
-	}
-
-	ul.opened {
-		li:hover ul {
-			display: block;
-		}
+		white-space: nowrap; // Wrap text down
 	}
 
 	li {
 		position: relative;
 		float: left;
-		border-bottom: 1px double #ddd;
 		border-right: 1px double #ddd;
-		box-shadow: 1px 1px 5px #ddd;
 
 
 		ul {
-			position: absolute;
 			top: 100%;
 			left: 0;
 			display: none;
 
-			li, a { float: none; width: 100%; display: block; }
+		}
+
+		li, a {
+			float: none;
+			width: 100%;
+			display: block;
+		}
+
+		li.divider a{
+			line-height: 0;
+			border-top: 1px solid grey;
+			padding: 0;
+		}
+
+		// ShortCut keys
+		i {
+			text-align: right;
+			margin-left: 20px;
+			display: inline-block;
+			font-size: 12px;
+			color: #C4C4C4;
 		}
 	}
 }

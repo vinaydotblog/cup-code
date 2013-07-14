@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"string"
+			],
+			[
+				"fin",
+				"function"
+			],
+			[
+				"com",
+				"commands"
+			],
+			[
+				"co",
+				"commands"
+			],
+			[
+				"hid",
+				"hidden"
+			],
+			[
+				"ki",
+				"kids"
+			],
+			[
+				"ite",
+				"items"
+			],
+			[
+				"not",
+				"notify"
+			],
+			[
 				"bottom",
 				"bottomCenter"
 			],
@@ -18,10 +50,6 @@
 			[
 				"link",
 				"link_to"
-			],
-			[
-				"s",
-				"settings"
 			],
 			[
 				"fun",
@@ -204,34 +232,10 @@
 	"buffers":
 	[
 		{
-			"file": "public/js/modules/request.js",
+			"file": "/C/wamp/www/playground/ideplay/menu.html",
 			"settings":
 			{
-				"buffer_size": 2131,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/FilesController.php",
-			"settings":
-			{
-				"buffer_size": 1224,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/modules/notify.js",
-			"settings":
-			{
-				"buffer_size": 1897,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/wamp/www/playground/ideplay/main.js",
-			"settings":
-			{
-				"buffer_size": 230,
+				"buffer_size": 1927,
 				"line_ending": "Windows"
 			}
 		},
@@ -239,7 +243,47 @@
 			"file": "public/js/main.js",
 			"settings":
 			{
-				"buffer_size": 2008,
+				"buffer_size": 2195,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/modules/filemenu.js",
+			"settings":
+			{
+				"buffer_size": 2459,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/modules/cmd.js",
+			"settings":
+			{
+				"buffer_size": 811,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/defaults.js",
+			"settings":
+			{
+				"buffer_size": 293,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/component/filemenu.scss",
+			"settings":
+			{
+				"buffer_size": 877,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/data/filemenu.json",
+			"settings":
+			{
+				"buffer_size": 1870,
 				"line_ending": "Windows"
 			}
 		}
@@ -247,9 +291,33 @@
 	"build_system": "Packages/Better CoffeeScript/CoffeeScript.sublime-build",
 	"command_palette":
 	{
-		"height": 127.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
 			[
 				"fetc",
 				"Fetch: File"
@@ -267,14 +335,6 @@
 				"Set Syntax: Diff"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"insall",
 				"Package Control: Install Package"
 			],
@@ -284,10 +344,6 @@
 			],
 			[
 				"disab",
-				"Package Control: Disable Package"
-			],
-			[
-				"disable",
 				"Package Control: Disable Package"
 			],
 			[
@@ -317,10 +373,6 @@
 			[
 				"gene",
 				"Laravel Generate: Migration"
-			],
-			[
-				"enable",
-				"Package Control: Enable Package"
 			],
 			[
 				"mig",
@@ -393,13 +445,9 @@
 			[
 				"inST",
 				"Package Control: Install Package"
-			],
-			[
-				"json",
-				"Set Syntax: JSON"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -416,30 +464,46 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/IDE/public/js/defaults.js",
-		"/C/wamp/www/IDE/public/js/libs/noty-bottomLeft.js",
-		"/C/wamp/www/IDE/public/js/main.js",
-		"/C/wamp/www/playground/ideplay/main.js",
-		"/C/wamp/www/IDE/app/libs/fs.php",
+		"/C/wamp/www/IDE/app/views/ide/filemenu.php",
+		"/C/wamp/www/IDE/public/css/component/filemenu.scss",
+		"/C/wamp/www/playground/ideplay/menu.js",
+		"/C/wamp/www/playground/ideplay/menu.json",
+		"/C/wamp/www/IDE/public/js/data/filemenu.json",
+		"/C/wamp/www/playground/ideplay/menu.scss",
+		"/C/wamp/www/IDE/public/js/modules/notify.js",
 		"/C/wamp/www/IDE/composer.json",
-		"/C/wamp/www/IDE/app/controllers/CupCodeController.php",
-		"/C/wamp/www/IDE/app/controllers/ProjectsController.php",
+		"/C/wamp/www/IDE/app/config/app.php",
+		"/C/wamp/www/playground/ideplay/keys.html",
+		"/C/wamp/www/IDE/app/config/proxy.php",
+		"/C/wamp/www/IDE/.gitignore",
+		"/C/wamp/www/nuts/trunk/Gemfile",
+		"/c/wamp/www/playground/php-heroku/composer.json",
+		"/c/wamp/www/playground/php-heroku/index.php",
+		"/C/wamp/www/IDE/public/js/main.js",
+		"/C/wamp/www/IDE/public/css/style.css",
+		"/C/wamp/www/IDE/public/css/style.scss",
+		"/C/wamp/www/IDE/app/views/ide/init.blade.php",
+		"/C/wamp/www/IDE/public/js/ace/config.js",
+		"/C/wamp/www/playground/ideplay/main.js",
+		"/C/wamp/www/IDE/public/js/modules/request.js",
 		"/C/wamp/www/IDE/app/controllers/FilesController.php",
 		"/C/wamp/www/IDE/app/routes.php",
+		"/C/wamp/www/IDE/public/js/defaults.js",
+		"/C/wamp/www/IDE/public/js/libs/noty-bottomLeft.js",
+		"/C/wamp/www/IDE/app/libs/fs.php",
+		"/C/wamp/www/IDE/app/controllers/CupCodeController.php",
+		"/C/wamp/www/IDE/app/controllers/ProjectsController.php",
 		"/C/wamp/www/IDE/public/js/modules/server_fs.js",
 		"/C/wamp/www/IDE/public/js/modules/filesystem.js",
-		"/C/wamp/www/IDE/public/js/modules/notify.js",
 		"/C/wamp/www/IDE/public/js/libs/jquery.min.js",
 		"/C/wamp/www/IDE/public/js/libs/noty-default.js",
 		"/C/wamp/www/repos/noty/demo/allLayouts.html",
 		"/C/wamp/www/IDE/app/models/Project.php",
 		"/C/wamp/www/playground/ideplay/request.html",
-		"/C/wamp/www/IDE/public/js/modules/request.js",
 		"/C/wamp/www/IDE/todo/tasks.md",
 		"/C/wamp/www/IDE/public/js/libs/backbone.js",
 		"/C/wamp/www/IDE/public/js/libs/underscore.js",
 		"/C/wamp/www/IDE/app/database/seeds/ProjectTableSeeder.php",
-		"/C/wamp/www/IDE/app/config/app.php",
 		"/C/wamp/www/IDE/app/database/seeds/DatabaseSeeder.php",
 		"/C/Users/Vinay/.ssh/id_rsa.pub",
 		"/C/wamp/www/IDE/app/database/migrations/2013_07_04_191613_create_projects_table.php",
@@ -527,23 +591,7 @@
 		"/C/wamp/www/ace/dawn.html",
 		"/C/wamp/www/ace/build/src-min-noconflict/ext-emmet.js",
 		"/C/wamp/www/ace/build/src/ext-emmet.js",
-		"/C/wamp/www/ace/build/src/ace.js",
-		"/C/wamp/www/ace/demo/keyboard_shortcuts.html",
-		"/C/wamp/www/ace/build/src-noconflict/ext-emmet.js",
-		"/C/wamp/www/ace/build/kitchen-sink/demo.js",
-		"/C/wamp/www/ace/emmet.js",
-		"/C/wamp/www/ace/lib/ace/ext/emmet.js",
-		"/C/wamp/www/ace/demo/kitchen-sink/require.js",
-		"/C/wamp/www/ace/lib/ace/snippets/apache.snippets",
-		"/C/wamp/www/ace/build/kitchen-sink/docs/coffeescript.coffee",
-		"/C/wamp/www/ace/lib/ace/snippets/coffee.snippets",
-		"/C/wamp/www/ace/demo/requirejs+build.html",
-		"/C/wamp/www/ace/build/src-min/ext-emmet.js",
-		"/C/wamp/www/story3/application/controllers/members.php",
-		"/C/wamp/www/story3/public/js/main.coffee",
-		"/C/wamp/www/story3/application/controllers/tasks.php",
-		"/C/wamp/www/story3/application/views/home/task.blade.php",
-		"/C/wamp/www/story3/application/models/member.php"
+		"/C/wamp/www/ace/build/src/ace.js"
 	],
 	"find":
 	{
@@ -561,6 +609,15 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"menu_ul",
+			"<i>",
+			";",
+			"provi",
+			"secure",
+			"server",
+			"port",
+			"php",
+			"MENU",
 			"51d70d2ba9d17",
 			"topLayout",
 			"\\\"",
@@ -628,23 +685,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "public/js/modules/request.js",
+					"file": "/C/wamp/www/playground/ideplay/menu.html",
 					"settings":
 					{
-						"buffer_size": 2131,
+						"buffer_size": 1927,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								15,
+								15
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -655,65 +712,94 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/controllers/FilesController.php",
+					"file": "public/js/main.js",
 					"settings":
 					{
-						"buffer_size": 1224,
+						"buffer_size": 2195,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								779,
-								779
+								697,
+								697
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 687.0,
+						"translation.y": 177.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "public/js/modules/notify.js",
+					"file": "public/js/modules/filemenu.js",
 					"settings":
 					{
-						"buffer_size": 1897,
+						"buffer_size": 2459,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								234,
-								234
+								2330,
+								2330
+							],
+							[
+								2345,
+								2345
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1867.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/C/wamp/www/playground/ideplay/main.js",
+					"file": "public/js/modules/cmd.js",
 					"settings":
 					{
-						"buffer_size": 230,
+						"buffer_size": 811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 89.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/js/defaults.js",
+					"settings":
+					{
+						"buffer_size": 293,
 						"regions":
 						{
 						},
@@ -726,8 +812,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -736,28 +821,55 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "public/js/main.js",
+					"buffer": 5,
+					"file": "public/css/component/filemenu.scss",
 					"settings":
 					{
-						"buffer_size": 2008,
+						"buffer_size": 877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								992,
-								992
+								531,
+								531
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 493.0,
+						"translation.y": 771.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/js/data/filemenu.json",
+					"settings":
+					{
+						"buffer_size": 1870,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1706,
+								1706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1915.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -819,16 +931,52 @@
 		"selected_items":
 		[
 			[
+				"filejson",
+				"IDE/public/js/data/filemenu.json"
+			],
+			[
+				"filemen",
+				"IDE/public/css/component/filemenu.scss"
+			],
+			[
 				"de",
 				"IDE/public/js/defaults.js"
+			],
+			[
+				"filemenuscs",
+				"IDE/public/css/component/filemenu.scss"
+			],
+			[
+				"main.js",
+				"IDE/public/js/main.js"
+			],
+			[
+				"notif",
+				"IDE/public/js/modules/notify.js"
+			],
+			[
+				"app",
+				"IDE/app/config/app.php"
+			],
+			[
+				"com",
+				"IDE/composer.json"
+			],
+			[
+				"confi",
+				"IDE/public/js/ace/config.js"
+			],
+			[
+				"comp",
+				"IDE/composer.json"
 			],
 			[
 				"main",
 				"IDE/public/js/main.js"
 			],
 			[
-				"notif",
-				"IDE/public/js/modules/notify.js"
+				"route",
+				"IDE/app/routes.php"
 			],
 			[
 				"filecon",
@@ -911,10 +1059,6 @@
 				"IDE/public/js/modules/request.js"
 			],
 			[
-				"app",
-				"IDE/app/config/app.php"
-			],
-			[
 				"data",
 				"IDE/app/config/database.php"
 			],
@@ -923,16 +1067,8 @@
 				"IDE/public/css/component/filesystem.scss"
 			],
 			[
-				"route",
-				"IDE/app/routes.php"
-			],
-			[
 				"file",
 				"story/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php"
-			],
-			[
-				"comp",
-				"story/composer.json"
 			],
 			[
 				"rout",
@@ -953,10 +1089,6 @@
 			[
 				"routes",
 				"story/app/routes.php"
-			],
-			[
-				"confi",
-				"story/app/config/packages/jasonlewis/basset/config.php"
 			],
 			[
 				"l4da",

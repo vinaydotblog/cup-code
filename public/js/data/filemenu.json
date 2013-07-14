@@ -1,0 +1,121 @@
+[
+	{
+		"name" 		: "file",
+		"label"		: "File",
+		"comment"	: "This is File Menu",
+		"kids" : [
+			{
+				"command"	: "new_project",
+				"label"		: "New Project",
+				"key"		: "ctrl+n"
+			},
+			{
+				"command"	: "open_project",
+				"label"		: "Open Project",
+				"key"		: "ctrl+o"
+			},
+			{
+				"command"	: "open_folder",
+				"label"		: "New Folder",
+				"key"		: "ctrl+shift+o"
+			},
+			{
+				"command"	: "new",
+				"label"		: "New Recent",
+				"key"		: "ctrl+shift+r"
+			},
+			{
+				"command"	: "save",
+				"label"		: "Save Project As...",
+				"key"		: "ctrl+s"
+			},
+			{
+				"divider"	: "true"
+			},
+			{
+				"command"	: "exit",
+				"label"		: "Exit",
+				"key"		: "ctrl+w"
+			}
+		]
+	},
+
+	{
+		"name"		: "edit",
+		"label"		: "Edit",
+		"_comment"	: "hoo la la la",
+		"kids" : [
+			{
+				"command"	: "cut",
+				"label"		: "Cut",
+				"key"		: "ctrl+x"
+			},
+			{
+				"command"	: "copy",
+				"label"		: "Copy",
+				"key"		: "ctrl+c"
+			},
+			{
+				"command"	: "paste",
+				"label"		: "Paste",
+				"key"		: "ctrl+v"
+			},
+			{
+				"command"	: "paste_indent",
+				"label"		: "Paste and Indent",
+				"key"		: "ctrl+shift+v"
+			},
+			{
+				"divider"	: "true"
+			},
+			{
+				"command"	: "new",
+				"label"		: "New Recent",
+				"key"		: "ctrl+shift+r"
+			},
+			{
+				"command"	: "save",
+				"label"		: "Save Project As...",
+				"key"		: "ctrl+s"
+			},
+			{
+				"command"	: "exit",
+				"label"		: "Exit",
+				"key"		: "ctrl+w"
+			}
+		]
+	},
+
+	{
+		"label" : "Selection"
+	},
+
+	{
+		"label" : "Find"
+	},
+
+	{
+		"name"		: "Help",
+		"label"		: "Help",
+		"key"		: "alt+h",
+		"kids" : [
+			{
+				"command"	: "open_documentation",
+				"label"		: "Documentation",
+				"key"		: "ctrl+shift+d",
+				"args"		: [ "doc a", "doc b" ]
+			},
+			{
+				"command"	: "help",
+				"label"		: "Help"
+			},
+			{
+				"divider"	: "true"
+			},
+			{
+				"command"	: "about",
+				"label"		: "About"
+			}
+		]
+	}
+]

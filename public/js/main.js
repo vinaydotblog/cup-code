@@ -9,7 +9,7 @@
 require.config({
 	deps : ['defaults','jquery','modules/notify'],
 	paths : {
-		text : 'ace/require/text',
+		text : 'ace/requirejs/text',
 		jquery : 'libs/jquery.min',
 		underscore : 'libs/underscore',
 		backbone : 'libs/backbone'
@@ -25,14 +25,18 @@ require(
 		'jquery', 
 		'ace/ace', // Code Editor for the web
 		// 'libs/emmet','ace/ext/emmet',
+		'modules/cmd',
 		'modules/filesystem',
+		'modules/filemenu',
 		'modules/tabs', 'modules/server_fs',
 		'modules/request'
 	], function(
 		$,
 		a,
 		// em, emmet_rjs,
+		cmd,
 		tl,
+		fm,
 		tabs, fs,
 		req
 	){
@@ -90,12 +94,7 @@ require(
 	/--------------------------------*/
 
 	$('#file-menu').appendTo('body')
-	.show()
-	.children('ul')
-	.on('click', function(e){
-		e.preventDefault();
-		$(this).toggleClass('opened');
-	});
+	.show();
 
 	/*--------------------------------/
 			Implement Tabs
