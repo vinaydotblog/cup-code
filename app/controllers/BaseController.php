@@ -2,18 +2,18 @@
 
 class BaseController extends Controller {
 
-	protected $layout = 'layouts.bootstrap';
+	// protected $layout = 'layouts.bootstrap';
 
 	/**
 	 * Setup the layout used by the controller.
 	 *
 	 * @return void
 	 */
-	protected function setupLayout()
+	protected function render()
 	{
 		if ( ! is_null($this->layout))
 		{
-			$this->layout = View::make($this->layout);
+			// $this->layout->content = View::make($this->layout);
 		}
 	}
 

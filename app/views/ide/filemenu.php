@@ -1,4 +1,4 @@
-<div id="file-menu" class="file-menu">
+<div id="file-menu" class="file-menu clearfix">
 	<ul>
 		<li>
 			<a href="#">File</a>

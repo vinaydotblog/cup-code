@@ -1,0 +1,17 @@
+{
+	"_ext"		: "_mode",
+	"html"		: "html",
+	"css"		: "css",
+	"js"		: "javascript",
+	"php"		: "php",
+	"rb"		: "ruby",
+	"coffee"	: "coffee",
+	"diff"		: "diff",
+	"haml"		: "haml",
+	"jade"		: "jade",
+	"less"		: "less",
+	"liquid"	: "liquid",
+	"md"		: "markdown",
+	"sql"		: "sql",
+	"json"		: "json"
+}

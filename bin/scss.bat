@@ -1,0 +1,1 @@
+scss --style=compressed --watch public/css/style.scss:public/css/style.css

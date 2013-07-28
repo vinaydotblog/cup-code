@@ -70,6 +70,8 @@ define(['jquery'/*,'text!data/filemenu.json'*/, 'libs/jwerty'], function($ /*, f
 			// Let Play with kids
 			var kids = items[i].kids, set = document.createElement('ul');
 
+			set.setAttribute('class', 'menu');
+
 			// if( !kids || !kids.length ) { alert('Why no kids'); }
 
 			for( i in kids ) {
@@ -98,9 +100,9 @@ define(['jquery'/*,'text!data/filemenu.json'*/, 'libs/jwerty'], function($ /*, f
 					key.innerText = kid.key.split('+').map(ucfirst).join(' + ');
 
 					// Register Shortcut
-					jwerty.key( kid.key , function(){
-						cmd.exec( this.command , this.args );
-					}, kid);
+					// jwerty.key( kid.key , function(){
+					// 	cmd.exec( this.command , this.args );
+					// }, kid);
 				}
 			}
 

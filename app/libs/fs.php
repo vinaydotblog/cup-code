@@ -5,7 +5,7 @@ class FS
 
 	static public function sayHi()
 	{
-		return "Saying Hi...";
+		return "Hi Folks!";
 	}
 
 	static public function files_rec($path = '.')

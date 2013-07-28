@@ -66,6 +66,10 @@
 				"key"		: "ctrl+shift+v"
 			},
 			{
+				"command"	: "select_all",
+				"label"		: "Select All"
+			},
+			{
 				"divider"	: "true"
 			},
 			{
@@ -87,7 +91,13 @@
 	},
 
 	{
-		"label" : "Selection"
+		"label" : "Editor",
+		"kids"	: [
+			{
+				"command"	: "select_next",
+				"label"		: "Select Next"
+			}
+		]
 	},
 
 	{

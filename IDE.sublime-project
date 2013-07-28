@@ -4,13 +4,14 @@
 		{
 			"folder_exclude_patterns":
 			[
-				".sass-cache",
-				"vendor"
+				".sass-cache"
 			],
-			"path": "/C/wamp/www/IDE"
+			"follow_symlinks": true,
+			"path": "/var/www/IDE"
 		},
 		{
-			"path": "/C/wamp/www/playground/ideplay"
+			"follow_symlinks": true,
+			"path": "/var/www/play/cup"
 		}
 	]
 }

@@ -1,0 +1,61 @@
+{
+	"selectionStyle"			: "line",
+
+	"highlightActiveLine"		: true,
+
+	"highlightSelectedWord"		: true,
+
+	"readOnly"					: false,
+
+	"cursorStyle"				: "ace",
+
+	"behavioursEnabled"			: true,
+
+	"wrapBehavioursEnabled"		: true,
+
+	"hScrollBarAlwaysVisible"	: false,
+
+	"highlightGutterLine"		: true,
+
+	"animatedScroll"			: false,
+
+	"showInvisibles"			: false,
+
+	"showPrintMargin"			: true,
+
+	"printMarginColumn"			: 80,
+
+	"printMargin"				: 80,
+
+	"fadeFoldWidgets"			: false,
+
+	"showFoldWidgets"			: true,
+
+	"showGutter"				: true,
+
+	"displayIndentGuides"		: true,
+
+	"fontSize"					: 12,
+
+	"scrollSpeed"				: 2,
+
+	"dragDelay"					: 150,
+
+	"focusTimout"				: 0,
+
+	"firstLineNumber"			: 1,
+
+	"overwrite"					: false,
+
+	"newLineMode"				: "auto",
+
+	"useWorker"					: true,
+
+	"useSoftTabs"				: true,
+
+	"tabSize"					: 4,
+
+	"wrap"						: "off",
+
+	"enableEmmet"				: true
+}

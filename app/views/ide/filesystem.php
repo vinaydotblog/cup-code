@@ -1,5 +1,4 @@
 <div class="fs-sidebar">
-	<h2>Treelist</h2>
 	<div class="treelist_wrapper">
 		<ul class="treelist" >
 			<li class="dir">

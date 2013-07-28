@@ -26,8 +26,9 @@ require(['jquery'], function($){
 		this.elem.appendChild(span);
 
 		// Main Document
-		var doc = $('<div>',{ css : { width: '100%', height : '100%' } }).appendTo(content_wrapper);
-		this.doc = main_document = $('<div>', { class : 'document' }).appendTo(doc);
+		var doc = $('<div>',{ class : 'document' }).appendTo(content_wrapper);
+		this.doc = main_document = $('<div>', { class : 'document main' }).appendTo(doc);
+		this.editorID = IDE.add(doc);
 
 		// Set refrences to tab
 		this.elem.obj = this;

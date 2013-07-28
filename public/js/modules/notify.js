@@ -4,7 +4,7 @@
 
 define(['jquery','libs/jquery.noty','libs/noty/inline' ,'libs/noty/theme','libs/noty/bottomLeft','libs/noty/bottomRight','libs/noty/bottomLeft','libs/noty/bottom'], function($){ 
 
-    $.noty.defaults.timeout = 80000;
+    $.noty.defaults.timeout = 20000;
 
     window.notify = function(msg, type){
         return noty({
@@ -42,6 +42,7 @@ define(['jquery','libs/jquery.noty','libs/noty/inline' ,'libs/noty/theme','libs/
                     // n1.setText( text + '<br><b>Completed</b> : ' + url );
                 } else {
                     n1.setText( text + '<br><b>Completed</b> : ' + link ).setType('success');
+                    setTimeout(n1.close, 4000);
                 }
             })
 

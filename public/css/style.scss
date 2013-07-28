@@ -5,16 +5,21 @@
 @import 'vars';
 
 // Import Common UI
+@import 'src/variable';
 @import 'src/mixins';
+@import 'src/buttons';
+@import 'src/modal';
 @import 'src/scrollbars';
 @import 'src/window';
 @import 'bourbon/bourbon';
 @import 'src/classes';
 
+
 // Import Application Specific Components
 @import 'component/tabs';
 @import 'component/filesystem';
 @import 'component/filemenu';
+@import 'component/project-dialogue';
 
 
 @include scrollbar-thin;
@@ -25,7 +30,14 @@
 body{ margin: 0; padding: 0; }
 
 // Make Fixed Window
-#main { @include fixed-screen; }
+#main {
+	@include fixed-screen;
+	margin-top: 26px;
+}
+
+.blue {
+	background: blue;
+}
 
 #inputDir {
 	position: fixed;
@@ -59,5 +71,9 @@ body{ margin: 0; padding: 0; }
 		width: 100%;
 		height: 100%;
 		top: 0;
+
+		&.main{
+			z-index: 100;
+		}
 	}
 }

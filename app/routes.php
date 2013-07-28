@@ -4,22 +4,50 @@
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
 */
 
+
+
+// Landing Area
 Route::get('/', 'IDEController@init');
-Route::resource('cup-code', 'CupCodeController');
-Route::resource('projects', 'ProjectsController');
-Route::resource('file', 'FilesController');
 
-Route::get('phpinfo', function(){
-	return phpinfo();
+Route::get('mail', function(){
+
+	$data['user'] = 'vinnizworld';
+
+	// Mail::pretend();
+	Mail::send('emails.hello', $data, function($mailer){
+		$mailer->to('aryans.vinay@gmail.com')->subject("Saying hello from laravel");
+	});	
+
 });
 
-Route::get('version', function(){
-	return phpversion();
+
+	Route::controller('projects','Projects');
+
+
+	Route::controller('cup', 'CupCodeController');
+
+	Route::resource('cup-code', 'CupCodeController');
+	Route::resource('projects', 'ProjectsController');
+	Route::resource('file', 'FilesController');
+
+	Route::resource('posts', 'PostsController');
+	Route::resource('animals', 'AnimalsController');
+
+	Route::get('phpinfo', function(){
+		return phpinfo();
+	});
+
+	Route::get('version', function(){
+		return phpversion();
+	});
+
+// Play Ground
+Route::get('play', function(){
+	var_dump( get_class(File::getFacadeRoot()) );
 });
+
+Route::resource('posts', 'PostsController');
+
+Route::resource('animals', 'AnimalsController');

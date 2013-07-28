@@ -18,8 +18,9 @@
 ul.treelist {
 	list-style-type: none;
 	display: none;
+	padding: 0;
 
-	ul{ display: none; }
+	ul{ display: none; padding: 0; }
 
 	li {
 		list-style: none;

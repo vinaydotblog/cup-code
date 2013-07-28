@@ -18,20 +18,25 @@ dropIfExists('users')
 
 $table->
 	->increments('id')
-	->string('email')
-	->string('name', 100)
+
+	->string('name', [100])
+
 	->integer('votes')
 	->bigInteger('votes')
 	->smallInteger('votes')
+
 	->float('amount')
 	->decimal('amount', 5, 2)
 	->boolean('confirmed')
+
 	->date('created_at')
 	->dateTime('created_at')
 	->time('sunrise')
 	->timestamp('added_on')
 	->timestamps()
+
 	->softDeletes()
+
 	->text('description')
 	->binary('data')
 	->enum('choices', array('foo', 'bar'))
@@ -43,4 +48,3 @@ $table->
 	->renameColumn('from', 'to');
 	dropColumn('votes')
 	dropColumn('votes', 'avatar', 'location')
-	

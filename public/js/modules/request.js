@@ -29,8 +29,8 @@ define(['jquery','underscore','backbone'],function($, _ , B){
 	p1 = new Project({ id : activeProject });
 
 	p1.on('sync', function(){
-		var data = this.get('data'), frag = document.createDocumentFragment();
-		// console.log(data);
+		var data = {} , frag = document.createDocumentFragment();
+		data[this.get('title')] = this.get('data');
 		// It'll process single directory
 		function process(d, first) {
 			var ul = document.createElement('ul');
@@ -87,7 +87,9 @@ define(['jquery','underscore','backbone'],function($, _ , B){
 	// server file on request
 	p1.on('request:file', function(data){
 		$.get(Settings.server + 'file/1' , { project_id : activeProject, file : data }, function(data){
-			editor.setValue(data.content);
+			IDE.$curEditor.setValue(data.content);
+			IDE.$curEditor.moveCursorTo(0,0);
+			IDE.$curEditor.focus();
 		});
 	});
 

@@ -1,8 +1,10 @@
 # 3rd July
-1. Integrate with laravel
+1. Integrate with laravel #done
 
 #7th July
-1. Request Module Creation
+1. Request Module Creation #progress
+
+#22 July
 
 
 # Ideas of Apps
@@ -19,20 +21,24 @@
 
 # Modules to Handle
 
-9. Back End set up #1
+9. Back End set up #1 #done
+1. Create a filesystem module #done
+3. Menu Module #done
+2. Create a command based structure #done
+7. Notification Module #done
+12. Push on Heroku #done
+
+15. Refector your code
+14. Define Actions / Commands
 13. I can finish this quickly.
-1. Create a filesystem module #1
-2. Create a command based structure #1
-3. Menu Module #1
-7. Notification Module #1
-11. Events for Actions #1
+11. Events for Actions #
 5. Preprocessor Integration #2
 6. Auto compilation of preprocessed files #2
+
 4. Terminal Integration #3
 8. Node Integration #3
 10. Developer's Profile #3
-11. Work Offline!
-12. Push on Heroku
+11. Work Offline! #4
 
 - Front End Actions
 	- Create A Project Class

@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://cup-code.herokuapp.com/public/index.php/',
+	'url' => 'http://cup-code/index.php/',
 
 	/*
 	|--------------------------------------------------------------------------

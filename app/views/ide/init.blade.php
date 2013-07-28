@@ -15,13 +15,14 @@
 <body>
 	<div id="main">
 
-		<input id="inputDir" type="file" webkitDirectory>
-		
 		<!-- File Menu -->
-		@include('ide/filemenu');
+		@include('ide/filemenu')
 
 		<!-- Left Side File Browser -->
 		@include('ide/filesystem')
+
+		<!-- Left Side File Browser -->
+		@include('ide/open_project')
 
 		<!-- Context Menu -->
 		<!-- @include('ide/contextmenu') -->

@@ -1,0 +1,60 @@
+/*
+ Project Dialogue
+ */
+
+.project-dialogue {
+
+	background: #f7f7f7;
+
+	.project {
+		 border: 1px solid gray;
+
+		 width: 180px;
+		 height: 44px;
+		 margin: 5px;
+		 display: inline-block;
+
+		 i.icon {
+		 	margin: 2px;
+		 	width: 40px;
+		 	height: 40px;
+		 	display: inline-block;
+		 	float: left;
+		 	background-size: contain;
+		 	background-repeat: no-repeat;
+		 }
+
+		 i.icon.php {
+		 	@include bg("langs/php.jpg");
+		 }
+		 i.icon.cakephp {
+		 	@include bg("langs/cakephp.png");
+		 }
+		 i.icon.rails {
+		 	@include bg("langs/rails.jpg");
+		 }
+		 i.icon.ruby {
+		 	background-image: url(../images/ruby.png);
+		 }
+		 i.icon.laravel {
+		 	background-image: url(../images/laravel.png);
+		 }
+
+		 p.title {
+		 	margin: 0;
+		 	font-weight: bold;
+		 	font-size: .9em;
+		 	line-height: 1.5em;
+
+		 }
+	 	span.desc {
+	 		display: inline-block;
+	 		font-size: 0.7em;
+	 		font-weight: normal;
+	 		line-height: 10px;
+	 		float: left;
+	 		color: gray;
+	 	}
+	}
+
+}
