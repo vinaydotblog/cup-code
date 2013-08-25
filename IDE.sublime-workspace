@@ -276,66 +276,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/config/database.php",
+			"file": "/var/www/play/cup/menu.html",
 			"settings":
 			{
-				"buffer_size": 3326,
-				"line_ending": "Unix"
+				"buffer_size": 1927,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/routes.php",
+			"file": "/home/vinay/admin_relate.ctp",
 			"settings":
 			{
-				"buffer_size": 1134,
-				"line_ending": "Unix"
+				"buffer_size": 5420,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/views/animals/index.blade.php",
+			"file": "/home/vinay/emails_controller.php",
 			"settings":
 			{
-				"buffer_size": 138,
-				"line_ending": "Unix"
+				"buffer_size": 49068,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/controllers/AnimalsController.php",
+			"contents": "\n        $referrer = Controller::referer();\n        $this->Session->write('ref', $referrer);\n        $ref = $this->Session->read('ref');\n\n        $admin = '';\n        if (!empty($this->data)) {\n            //echo \"<pre>\";\n            //print_r($this->data);\n            if($this->data['Email']['related_to'] == 'lead')\n                $this->data['Email']['lead_id'] = $this->data['Activity']['related_id'];\n            else if($this->data['Email']['related_to'] == 'opportunity')\n                $this->data['Email']['opportunity_id'] = $this->data['Activity']['related_id'];\n            $this->data['Email']['related_to'] = ucwords($this->data['Email']['related_to']);\n            $this->data['Email']['type']='INBOX';\n            $this->data['Email']['status_type']='open';\n            $this->Email->id = $this->data['Email']['email_id'];\n            $this->Email->save($this->data);\n            $email = $this->Email->findById($this->data['Email']['email_id']);\n\n            $activity = array();\n            $activity['Activity']['type'] = 'email';\n            $activity['Activity']['email_id'] = $email['Email']['id'];\n            $activity['Activity']['customer_id'] = $email['Email']['customer_id'];\n            $activity['Activity']['administrator_id'] = $email['Email']['administrator_id'];\n            $activity['Activity']['comments'] = $email['Email']['subject'];            \n            $activity['Activity']['date'] = $email['Email']['msgdate'];\n            $activity['Activity']['contact_name'] = $email['Customer']['customer_name'];\n\n            if($email['Email']['related_to'] == 'Opportunity'){\n                $activity['Activity']['related_to'] = 'opportunity';\n                $activity['ActivityOpportunity']['opportunity_id'] = $email['Email']['opportunity_id'];\n                $this->Email->Opportunity->ActivityOpportunity->Activity->create();\n                $this->Email->Opportunity->ActivityOpportunity->Activity->save($activity);\n                $activity_id = $this->Email->Opportunity->ActivityOpportunity->Activity->getLastInsertId();\n                $activity['ActivityOpportunity']['activity_id'] = $activity_id;\n                $this->Email->Opportunity->ActivityOpportunity->create();\n                $this->Email->Opportunity->ActivityOpportunity->save($activity);\n            }else if($email['Email']['related_to'] == 'Lead'){\n                $activity['Activity']['related_to'] = 'lead';\n                $activity['ActivityLead']['lead_id'] = $email['Email']['lead_id'];\n                $this->Email->Lead->ActivityLead->Activity->create();\n                $this->Email->Lead->ActivityLead->Activity->save($activity);\n                $activity_id = $this->Email->Lead->ActivityLead->Activity->getLastInsertId();\n                $activity['ActivityLead']['activity_id'] = $activity_id;\n                $this->Email->Lead->ActivityLead->create();\n                $this->Email->Lead->ActivityLead->save($activity);\n            }\n            //print_r($email);\n            $this->Session->setFlash(__('The Email has been related.', true),'success');\n            $this->redirect(array('action' => 'admin_relate?close=1'));\n        }\n        $customer = $this->Email->Customer->read(null,$customer_id);\n        $administrators = $this->Email->Administrator->find('list');\n        $this->set(compact('administrators','admin','customer','email_id'));\n    ",
 			"settings":
 			{
-				"buffer_size": 1535,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/BaseModel.php",
-			"settings":
-			{
-				"buffer_size": 411,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/Animal.php",
-			"settings":
-			{
-				"buffer_size": 207,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/Member.php",
-			"settings":
-			{
-				"buffer_size": 112,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/animals/create.blade.php",
-			"settings":
-			{
-				"buffer_size": 342,
+				"buffer_size": 3389,
 				"line_ending": "Unix"
 			}
 		}
@@ -343,7 +311,7 @@
 	"build_system": "Packages/Better CoffeeScript/CoffeeScript.sublime-build",
 	"command_palette":
 	{
-		"height": 75.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -559,9 +527,24 @@
 	},
 	"file_history":
 	[
+		"/var/www/IDE/app/routes.php",
+		"/var/www/IDE/public/js/editor.coffee",
+		"/var/www/IDE/public/js/ace/snippets/html.snippets",
+		"/var/www/IDE/public/js/ace/snippets.js",
+		"/usr/share/applications/defaults.list",
+		"/var/www/IDE/public/js/modules/request.js",
+		"/var/www/IDE/app/controllers/Projects.php",
+		"/home/vinay/.local/share/applications/mimeapps.list",
+		"/usr/share/applications/sublime_text.desktop",
+		"/var/www/IDE/app/controllers/ProjectsController.php",
+		"/var/www/IDE/public/js/libs/require.js",
 		"/var/www/IDE/app/views/animals/create.blade.php",
-		"/var/www/IDE/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/var/www/IDE/app/models/Animal.php",
+		"/var/www/IDE/app/controllers/AnimalsController.php",
+		"/var/www/IDE/app/views/animals/index.blade.php",
+		"/var/www/IDE/app/config/database.php",
+		"/var/www/IDE/app/models/BaseModel.php",
+		"/var/www/IDE/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
 		"/var/www/IDE/app/database/seeds/AnimalsTableSeeder.php",
 		"/var/www/IDE/app/controllers/BaseController.php",
 		"/var/www/IDE/app/database/seeds/DatabaseSeeder.php",
@@ -574,12 +557,10 @@
 		"/var/www/play/cup/layout.php",
 		"/var/www/play/cup/main.js",
 		"/home/vinay/.config/sublime-text-3/Packages/User/mine/pipe_comment.sublime-snippet",
-		"/var/www/IDE/app/routes.php",
 		"/var/www/IDE/app/storage/logs/log-apache2handler-2013-07-28.txt",
 		"/var/www/IDE/app/config/mail.php",
 		"/var/www/IDE/app/views/emails/hello.blade.php",
 		"/var/www/IDE/public/js/defaults.coffee",
-		"/var/www/IDE/app/controllers/ProjectsController.php",
 		"/var/www/IDE/bin/coffee.bat",
 		"/var/www/IDE/public/js/defaults.js",
 		"/home/vinay/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
@@ -588,13 +569,11 @@
 		"/home/vinay/.bash_profile",
 		"/var/www/IDE/app/config/app.php",
 		"/etc/apache2/sites-available/localhost",
-		"/var/www/IDE/app/config/database.php",
 		"/etc/apache2/apache2.conf",
 		"/etc/apache2/conf.d/my.conf",
 		"/opt/lampp/etc/original/httpd.conf",
 		"/etc/apache2/sites-available/cup-code",
 		"/var/www/IDE/IDE.sublime-project",
-		"/var/www/IDE/public/js/editor.coffee",
 		"/var/www/IDE/public/js/main.coffee",
 		"/C/wamp/www/IDE/public/js/modules/log.coffee",
 		"/C/wamp/www/IDE/public/js/modules/log.js",
@@ -675,18 +654,7 @@
 		"/C/wamp/www/repos/bootstrap-sass/vendor/assets/stylesheets/bootstrap/_mixins.scss",
 		"/C/wamp/www/playground/ideplay/modal/mixins.scss",
 		"/C/wamp/www/playground/ideplay/modal/modal.scss",
-		"/C/wamp/www/repos/bootstrap-sass/lib/bootstrap-sass/compass_functions.rb",
-		"/C/wamp/www/playground/ideplay/modal/project-dialogue.scss",
-		"/C/wamp/www/playground/ideplay/modal/buttons.scss",
-		"/C/wamp/www/playground/ideplay/modal/variable.scss",
-		"/C/wamp/www/repos/bootstrap-sass/vendor/assets/stylesheets/bootstrap/_variables.scss",
-		"/C/wamp/www/IDE/js/main.js",
-		"/C/wamp/www/IDE/app/views/ide/filemenu.php",
-		"/C/wamp/www/IDE/public/css/component/filesystem.scss",
-		"/C/wamp/www/IDE/public/js/data/filemenu.json",
-		"/C/wamp/www/playground/ideplay/menu.html",
-		"/C/Users/Vinay/.ssh/id_rsa.pub",
-		"/C/wamp/www/playground/ideplay/menu.js"
+		"/C/wamp/www/repos/bootstrap-sass/lib/bootstrap-sass/compass_functions.rb"
 	],
 	"find":
 	{
@@ -694,9 +662,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/var/www/IDE/public/js/ace",
 			"C:\\wamp\\www\\playground\\ideplay\\modal\\bourbon"
 		]
 	},
@@ -705,6 +674,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"search_customer",
+			"editor",
+			"require",
+			"register",
+			"addSnippet",
+			"snippetNameMap",
+			"ace/snippets",
 			"h2",
 			"vhost",
 			"enable",
@@ -813,107 +789,81 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/config/database.php",
-					"semi_transient": false,
+					"file": "/var/www/play/cup/menu.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3326,
+						"buffer_size": 1927,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1952,
-								1952
+								5,
+								5
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 714.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/routes.php",
+					"file": "/home/vinay/admin_relate.ctp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1134,
+						"buffer_size": 5420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								796,
-								796
+								5401,
+								5401
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2544.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/animals/index.blade.php",
+					"file": "/home/vinay/emails_controller.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 138,
+						"buffer_size": 49068,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/controllers/AnimalsController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1535,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								823,
-								823
+								27609,
+								27609
 							]
 						],
 						"settings":
@@ -923,112 +873,32 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 323.0,
+						"translation.y": 8629.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/models/BaseModel.php",
+					"buffer": 3,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 411,
+						"buffer_size": 3389,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								387,
-								387
+								1170,
+								1170
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/models/Animal.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 207,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								105,
-								105
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/models/Member.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 112,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/animals/create.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								157,
-								157
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Laravel Blade Highlighter/laravel-blade.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1098,6 +968,22 @@
 		"selected_items":
 		[
 			[
+				"rou",
+				"IDE/app/routes.php"
+			],
+			[
+				"request",
+				"IDE/public/js/modules/request.js"
+			],
+			[
+				"requ",
+				"IDE/public/js/libs/require.js"
+			],
+			[
+				"proje",
+				"IDE/app/controllers/Projects.php"
+			],
+			[
 				"animcre",
 				"IDE/app/views/animals/create.blade.php"
 			],
@@ -1148,10 +1034,6 @@
 			[
 				"illuminate/filesystem/filesystem",
 				"IDE/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php"
-			],
-			[
-				"rou",
-				"IDE/app/routes.php"
 			],
 			[
 				"cofb",
@@ -1587,7 +1469,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 325.0,
+	"side_bar_width": 321.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -3,7 +3,9 @@
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
 		"jasonlewis/basset": "dev-master",
-		"vtalbot/markdown": "1.3.*@dev"
+		"vtalbot/markdown": "1.3.*@dev",
+		"webcreate/vcs": "dev-master",
+		"wisembly/elephant.io": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

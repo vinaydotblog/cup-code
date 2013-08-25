@@ -11,7 +11,7 @@ define ->
 
 		autoName = 0;
 
-		groupName = null
+		groupName = []
 
 		# Log whatever
 		constructor : ->
@@ -26,11 +26,12 @@ define ->
 
 		# Group Collapsed
 		@g : (name) ->
-			groupName = name or 'group_' + ++autoName
-			nativeConsole.groupCollapsed groupName
+			name = name or 'group_' + ++autoName
+			groupName.push name
+			nativeConsole.groupCollapsed name
 
 		@ge : (name) ->
-			nativeConsole.groupEnd name or groupName
+			nativeConsole.groupEnd name or groupName.pop()
 
 		@er : ->
 			nativeConsole.error.apply nativeConsole, arguments

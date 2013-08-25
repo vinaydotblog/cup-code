@@ -115,6 +115,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 		'Basset\BassetServiceProvider',
+		// 'Webcreate\Vcs',
 
 	),
 
@@ -180,7 +181,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Basset'		  => 'Basset\Facade',
+		// 'Git'		  => 'webcreate\vcs\git',
+		// 'Svn'		  => 'webcreate\vcs\svn',
 
 	),
 

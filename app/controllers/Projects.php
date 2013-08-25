@@ -17,7 +17,14 @@ class Projects extends BaseController
 	 */
 	function get_details($hash_id = null)
 	{
-		
+		$project = Project::whereHashId( $hash_id )->first();
+		if( $project ) {
+			$fs = FS::files_rec( realpath( $project->private_path . $project->public_path ) );
+			$project->data = $fs;
+			return $project;
+		} else {
+			return array('success' => false, 'message' => 'This project is no longer available' );
+		}
 	}
 
 	/*

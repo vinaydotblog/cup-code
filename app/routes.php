@@ -5,49 +5,49 @@
 | Application Routes
 |--------------------------------------------------------------------------
 */
-
+use ElephantIO\Client as Elephant;
 
 
 // Landing Area
-Route::get('/', 'IDEController@init');
+Route::get('/', 'IDE@start');
 
-Route::get('mail', function(){
+Route::resource('projects','ProjectsController');
 
-	$data['user'] = 'vinnizworld';
+Route::resource('cup-code', 'CupCodeController');
+// Route::resource('projects', 'ProjectsController');
+Route::resource('file', 'FilesController');
 
-	// Mail::pretend();
-	Mail::send('emails.hello', $data, function($mailer){
-		$mailer->to('aryans.vinay@gmail.com')->subject("Saying hello from laravel");
-	});	
 
+
+Route::get('elephant', function(){
+
+	$elephant = new Elephant('http://localhost:3000', 'socket.io', 1, false, true, false);
+
+	$elephant->init();
+	$elephant->close();
+
+	echo 'tryin to send `bar` to the event `foo`';
+	                        
 });
 
 
-	Route::controller('projects','Projects');
-
-
-	Route::controller('cup', 'CupCodeController');
-
-	Route::resource('cup-code', 'CupCodeController');
-	Route::resource('projects', 'ProjectsController');
-	Route::resource('file', 'FilesController');
-
-	Route::resource('posts', 'PostsController');
-	Route::resource('animals', 'AnimalsController');
-
-	Route::get('phpinfo', function(){
-		return phpinfo();
-	});
-
-	Route::get('version', function(){
-		return phpversion();
-	});
-
-// Play Ground
-Route::get('play', function(){
-	var_dump( get_class(File::getFacadeRoot()) );
+Route::get('test', function(){
+	return array("foo","bar");
 });
 
-Route::resource('posts', 'PostsController');
+// Project pa
+Route::controller('docs', 'DocsController');
 
-Route::resource('animals', 'AnimalsController');
+
+
+
+
+
+
+
+
+
+
+
+
+// EOF

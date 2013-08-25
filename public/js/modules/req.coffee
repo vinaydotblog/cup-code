@@ -5,7 +5,7 @@
 
 define ['jquery', 'underscore', 'backbone', 'editor'] , ($, _, B, editor) ->
 
-	activeProject = '51d70d2ba9d17'
+	activeProject = '5205dd4740cde'
 
 	$.get Settings.server + 'js/data/code_mode.json', (modes) -> editor.modes = modes
 
@@ -30,10 +30,13 @@ define ['jquery', 'underscore', 'backbone', 'editor'] , ($, _, B, editor) ->
 
 		data[ @get('title') ] = @get('data')
 
+		base = 'BASE/'
+
 		process = (d, first) ->
 			ul = document.createElement 'ul'
 			ul.className = 'treelist' if first
 
+			# Itrate over folders
 			for i of d
 
 				if i isnt ':' and d.hasOwnProperty i
@@ -53,21 +56,20 @@ define ['jquery', 'underscore', 'backbone', 'editor'] , ($, _, B, editor) ->
 
 					li.appendChild process d[i]
 
-			if i is ':'
+			# Itrate over files
+			for j of d[':']
 
-				for j of d[i]
+				file = d[':'][j]
+				li = document.createElement 'li'
+				file_div = document.createElement 'div'
 
-					file = d[i][j]
-					li = document.createElement 'li'
-					file_div = document.createElement 'div'
+				li.className = 'file'
+				li.appendChild file_div
 
-					li.className = 'file'
-					li.appendChild file_div
+				file_div.innerHTML = file.name
 
-					file_div.innerHTML = file.name
-
-					li.path = file.path
-					ul.appendChild li
+				li.path = file.path
+				ul.appendChild li
 
 			ul
 		# End of process

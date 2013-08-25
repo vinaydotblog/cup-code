@@ -1,6 +1,6 @@
 <?php
 
-class FilesController extends \BaseController {
+class IDE extends BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +9,12 @@ class FilesController extends \BaseController {
 	 */
 	public function index()
 	{
+		//
+	}
 
+	public function start()
+	{
+		return View::make('ide/home');
 	}
 
 	/**
@@ -40,13 +45,7 @@ class FilesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$p1 = Project::whereHashId( Input::get('project_id') )->first();
-
-		$path = realpath( str_replace('\\', '/', rtrim($p1->private_path . $p1->public_path . Input::get('file') ,'/' )) );
-		return array(
-				'name' => $path,
-				'content' => file_get_contents($path)
-			);
+		//
 	}
 
 	/**
@@ -68,7 +67,7 @@ class FilesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return "HO";
+		//
 	}
 
 	/**

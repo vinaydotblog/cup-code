@@ -5,15 +5,21 @@
 
 define [
 	'ace/ace' # Code Editor for the web
-	'defaults',
-	'jquery',
+	'ace/snippets'
+	'defaults'
+	'libs/emmet', 'ace/ext/emmet'
+	'jquery'
 ],
 
-(ace, defaults, $) ->
+(ace, snip, defaults, em, emrjs, $) ->
+
+	$('#content').height('555px');
 
 	user_defaults = {} # simulate user's default settings
 
 	defaults = $.extend defaults, user_defaults # Extend with user's given defaults
+
+	window.snip = snip
 
 	class Editor
 
@@ -73,9 +79,9 @@ define [
 			e.session.setMode( defaults.mode )	
 
 			if defaults.emmet
-				# Check if emmet needs to be load
-				require ['libs/emmet', 'ace/ext/emmet'], (em, emrjs ) ->
-					emrjs.setCore emmet
+				emrjs.setCore emmet
+				# # Check if emmet needs to be load
+				# require [], (em, emrjs ) ->
 
 
 		# Close it!

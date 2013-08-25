@@ -37,6 +37,8 @@ require [
 	# Initialize Editor with welcome document
 	editor.add "first_document"
 
+	# $('#content').height('100%?S');
+
 	# just try it!
 	jwerty.key "ctrl+1", -> editor.increaseFont();
 	jwerty.key "ctrl+2", -> editor.decreaseFont();

@@ -12,26 +12,22 @@ class FS
 	{
 		$dirname = $path;
 		$files = array();
-
 		// Constants
 		define('DS', DIRECTORY_SEPARATOR);
 
 
 		function direcoty_handler($dir = '.', $base = '\\') {
 			// Directory Handler
-			$dh  = opendir($dir);
+			$dirs  = scandir($dir);
 
 			$fl = array();
 
-			// Loop Throught Each File
-			while (false !== ($filename = readdir($dh))) {
-
-				if($filename[0] != '.') {
-
-					if(  is_dir( $dir . DS . $filename ) ) {
-						$fl[ $filename ] = direcoty_handler( $dir . DS . $filename, $base . $filename . DS );
+			foreach( $dirs as $file ) {
+				if($file != '.' && $file != '..' ) {
+					if(  is_dir( $dir . DS . $file ) ) {
+						$fl[ $file ] = direcoty_handler( $dir . DS . $file, $base . $file . DS );
 					} else {
-						$fl[':'][] = array( 'name' => $filename, 'path' => $base . $filename . DS );
+						$fl[':'][] = array( 'name' => $file, 'path' => $base . $file . DS );
 					}
 					
 				}

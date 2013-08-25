@@ -4,82 +4,74 @@
 	Control Everything of your IDE
 */
 
+define(['ace/ace', 'ace/snippets', 'defaults', 'libs/emmet', 'ace/ext/emmet', 'jquery'], function(ace, snip, defaults, em, emrjs, $) {
+  var Editor, user_defaults;
+  $('#content').height('555px');
+  user_defaults = {};
+  defaults = $.extend(defaults, user_defaults);
+  window.snip = snip;
+  Editor = (function() {
+    function Editor() {}
 
-(function() {
-  define(['ace/ace', 'defaults', 'jquery'], function(ace, defaults, $) {
-    var Editor, user_defaults;
-    user_defaults = {};
-    defaults = $.extend(defaults, user_defaults);
-    Editor = (function() {
-      function Editor() {}
+    Editor._id = 0;
 
-      Editor._id = 0;
+    Editor.active_instances = 0;
 
-      Editor.active_instances = 0;
+    Editor.$editors = [];
 
-      Editor.$editors = [];
+    Editor.$curEditor = null;
 
-      Editor.$curEditor = null;
+    Editor.$fontSize = parseInt(defaults.fontSize) || 12;
 
-      Editor.$fontSize = parseInt(defaults.fontSize) || 12;
+    Editor.increaseFont = function(key, value) {
+      return $('.document').css('fontSize', ++this.$fontSize);
+    };
 
-      Editor.increaseFont = function(key, value) {
-        return $('.document').css('fontSize', ++this.$fontSize);
-      };
+    Editor.decreaseFont = function(key, value) {
+      return $('.document').css('fontSize', --this.$fontSize);
+    };
 
-      Editor.decreaseFont = function(key, value) {
-        return $('.document').css('fontSize', --this.$fontSize);
-      };
+    Editor.add = function(elem, val) {
+      var editor, id;
+      if (val == null) {
+        val = "<h1>Hello World!</h1>";
+      }
+      log.g();
+      id = ++this._id;
+      log("Editor Initiated of id %s", id);
+      this.$active_instances++;
+      editor = ace.edit(elem);
+      this._setup(editor);
+      editor.setValue(val);
+      this.$editors[id] = editor;
+      log.ge();
+      return id;
+    };
 
-      Editor.add = function(elem, val) {
-        var editor, id;
-        if (val == null) {
-          val = "<h1>Hello World!</h1>";
-        }
-        log.g();
-        id = ++this._id;
-        log("Editor Initiated of id %s", id);
-        this.$active_instances++;
-        editor = ace.edit(elem);
-        this._setup(editor);
-        editor.setValue(val);
-        this.$editors[id] = editor;
-        log.ge();
-        return id;
-      };
+    Editor._setup = function(e) {
+      log("Setting up default stuff!!");
+      $(e.container).addClass('document').css('fontSize', this.$fontSize);
+      this.$curEditor = e;
+      e.setTheme(defaults.theme);
+      e.session.setMode(defaults.mode);
+      if (defaults.emmet) {
+        return emrjs.setCore(emmet);
+      }
+    };
 
-      Editor._setup = function(e) {
-        log("Setting up default stuff!!");
-        $(e.container).addClass('document').css('fontSize', this.$fontSize);
-        this.$curEditor = e;
-        e.setTheme(defaults.theme);
-        e.session.setMode(defaults.mode);
-        if (defaults.emmet) {
-          return require(['libs/emmet', 'ace/ext/emmet'], function(em, emrjs) {
-            return emrjs.setCore(emmet);
-          });
-        }
-      };
+    Editor.remove = function(id) {
+      log("Removing %s", id);
+      this.active_instances--;
+      $(this.editors[id].container).remove();
+      return delete this.$editors[id];
+    };
 
-      Editor.remove = function(id) {
-        log("Removing %s", id);
-        this.active_instances--;
-        $(this.editors[id].container).remove();
-        return delete this.$editors[id];
-      };
+    Editor.get = function(id) {
+      return this.editor[id];
+    };
 
-      Editor.get = function(id) {
-        return this.editor[id];
-      };
+    return Editor;
 
-      return Editor;
-
-    })();
-    return window.Editor = Editor;
-  });
-
-}).call(this);
-
-/*
-//@ sourceMappingURL=editor.map
-*/
+  })();
+  return window.Editor = Editor;
+});

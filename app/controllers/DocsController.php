@@ -1,15 +1,28 @@
 <?php
 
-class FilesController extends \BaseController {
+class DocsController extends BaseController {
+
+	protected $layout = 'docs.layout';
 
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function getIndex()
 	{
+		$this->layout->content = View::make('docs.home');
+		// return View::make('docs.home');
+	}
 
+	public function getNew()
+	{
+		$this->layout->content = View::make('docs.new');
+	}
+
+	public function there()
+	{
+		return "Yup! i'm here.";
 	}
 
 	/**
@@ -40,13 +53,7 @@ class FilesController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$p1 = Project::whereHashId( Input::get('project_id') )->first();
-
-		$path = realpath( str_replace('\\', '/', rtrim($p1->private_path . $p1->public_path . Input::get('file') ,'/' )) );
-		return array(
-				'name' => $path,
-				'content' => file_get_contents($path)
-			);
+		//
 	}
 
 	/**
@@ -68,7 +75,7 @@ class FilesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return "HO";
+		//
 	}
 
 	/**

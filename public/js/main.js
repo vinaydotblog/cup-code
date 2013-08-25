@@ -3,35 +3,27 @@
 	Bootstraper OF cup code
 */
 
+require.config({
+  deps: ['defaults', 'modules/log'],
+  paths: {
+    text: 'ace/requirejs/text',
+    jquery: 'libs/jquery.min',
+    underscore: 'libs/underscore',
+    backbone: 'libs/backbone'
+  }
+});
 
-(function() {
-  require.config({
-    deps: ['defaults', 'modules/log'],
-    paths: {
-      text: 'ace/requirejs/text',
-      jquery: 'libs/jquery.min',
-      underscore: 'libs/underscore',
-      backbone: 'libs/backbone'
-    }
+require(['jquery', 'editor', 'libs/jwerty', 'components/modal', 'modules/cmd', 'modules/notify', 'modules/log', 'modules/filesystem', 'modules/filemenu', 'modules/server_fs', 'modules/tdi', 'modules/req'], function($, editor, jw, modal, cmd, noty, log, fs, fm, tdi, req) {
+  editor.add("first_document");
+  jwerty.key("ctrl+1", function() {
+    return editor.increaseFont();
   });
-
-  require(['jquery', 'editor', 'libs/jwerty', 'components/modal', 'modules/cmd', 'modules/notify', 'modules/log', 'modules/filesystem', 'modules/filemenu', 'modules/server_fs', 'modules/tdi', 'modules/req'], function($, editor, jw, modal, cmd, noty, log, fs, fm, tdi, req) {
-    editor.add("first_document");
-    jwerty.key("ctrl+1", function() {
-      return editor.increaseFont();
-    });
-    jwerty.key("ctrl+2", function() {
-      return editor.decreaseFont();
-    });
-    $('#file-menu').appendTo('body').show();
-    $('#content_wrapper').tabbed();
-    return cmd.define('open_project', function() {
-      return $('#open_project').modal('show');
-    });
+  jwerty.key("ctrl+2", function() {
+    return editor.decreaseFont();
   });
-
-}).call(this);
-
-/*
-//@ sourceMappingURL=main.map
-*/
+  $('#file-menu').appendTo('body').show();
+  $('#content_wrapper').tabbed();
+  return cmd.define('open_project', function() {
+    return $('#open_project').modal('show');
+  });
+});
