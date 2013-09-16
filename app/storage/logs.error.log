@@ -5,3 +5,49 @@
 2013/08/18 11:12:34 [error] 1091#0: *122 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare DocsController::getIndex() in /var/www/IDE/app/controllers/DocsController.php on line 15" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /docs HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
 2013/08/18 11:54:17 [error] 1091#0: *199 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Access level to DocsController::$layout must be protected (as in class BaseController) or weaker in /var/www/IDE/app/controllers/DocsController.php on line 3" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /docs/new HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
 2013/08/18 12:02:11 [error] 1091#0: *218 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '}' in /var/www/IDE/app/controllers/BaseController.php on line 22" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /docs/new HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/08/31 07:47:11 [error] 3197#0: *31 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /test HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/08/31 07:49:04 [error] 3197#0: *31 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /test HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/08/31 08:00:15 [error] 1052#0: *23 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Illuminate\Routing\Router::foo() in /var/www/IDE/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 174
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. Illuminate\Foundation\Application->run() /var/www/IDE/public/index.php:49
+PHP message: PHP   3. Illuminate\Foundation\Application->dispatch($request = *uninitialized*) /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:506
+PHP message: PHP   4. Illuminate\Routing\Router->dispatch($request = *uninitialized*) /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+PHP message: PHP   5. Illuminate\Routing\Route->run($request = *uninitialized*) /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1016
+PHP message: PHP   6. Illuminate\Routing\Route->callCallable() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:47
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:80
+PHP message: PHP   8. {closure:/var/www/IDE/app/routes.php:34-47}() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:80
+PHP message: PHP   9. Illuminate\Support\Facades\Route::foo() /var/www/IDE/app/routes.php:38
+PHP message: PHP  10. Illuminate\Support\Facades\Facade::__callStatic($method = *uninitialized*, $args = *uninitialized*) /var/www/IDE/app/routes.php:38" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /test HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/09/14 00:03:55 [error] 1074#0: *37 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Illuminate\Routing\Router::foo() in /var/www/IDE/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 174
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. Illuminate\Foundation\Application->run() /var/www/IDE/public/index.php:49
+PHP message: PHP   3. Illuminate\Foundation\Application->dispatch() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:506
+PHP message: PHP   4. Illuminate\Routing\Router->dispatch() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+PHP message: PHP   5. Illuminate\Routing\Route->run() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1016
+PHP message: PHP   6. Illuminate\Routing\Route->callCallable() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:47
+PHP message: PHP   7. call_user_func_array() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:80
+PHP message: PHP   8. {closure:/var/www/IDE/app/routes.php:34-47}() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:80
+PHP message: PHP   9. Illuminate\Support\Facades\Route::foo() /var/www/IDE/app/routes.php:38
+PHP message: PHP  10. Illuminate\Support\Facades\Facade::__callStatic() /var/www/IDE/app/routes.php:38" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /test HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/09/14 01:24:44 [error] 1074#0: *149 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '--' (T_DEC), expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /var/www/IDE/app/storage/views/3ad9a42f8189cd3c0f305e7ea2522b6b on line 30
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. Illuminate\Foundation\Application->run() /var/www/IDE/public/index.php:49
+PHP message: PHP   3. Illuminate\Foundation\Application->dispatch() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:506
+PHP message: PHP   4. Illuminate\Routing\Router->dispatch() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:530
+PHP message: PHP   5. Illuminate\Routing\Route->run() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1016
+PHP message: PHP   6. Illuminate\Routing\Route->callCallable() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:47
+PHP message: PHP   7. call_user_func_array() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:80
+PHP message: PHP   8. Illuminate\Routing\Router->Illuminate\Routing\{closure}() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Route.php:80
+PHP message: PHP   9. Illuminate\Routing\Controllers\Controller->callAction() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Router.php:985
+PHP message: PHP  10. Illuminate\Routing\Controllers\Controller->processResponse() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:126
+PHP message: PHP  11. Illuminate\Routing\Router->prepare() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Controllers/Controller.php:156
+PHP message: PHP  12. Symfony\Component\HttpFoundation\Response->__construct() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Routing/Router.php:1414
+PHP message: PHP  13. Illuminate\Http\Response->setContent() /var/www/IDE/vendor/symfony/http-foundation/Symfony/Component/HttpFounda
+2013/09/14 01:39:22 [error] 1074#0: *216 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected end of file in /var/www/IDE/app/routes.php on line 80
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. require_once() /var/www/IDE/public/index.php:35
+PHP message: PHP   3. require() /var/www/IDE/bootstrap/start.php:61" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /docs/loginsd HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"

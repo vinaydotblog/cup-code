@@ -37,7 +37,7 @@ require [
 	# Initialize Editor with welcome document
 	editor.add "first_document"
 
-	# $('#content').height('100%?S');
+	$('#content').height( $(window).height() - 75 );
 
 	# just try it!
 	jwerty.key "ctrl+1", -> editor.increaseFont();
@@ -54,3 +54,24 @@ require [
 
 
 	# Move ON!!!
+
+	document.addEventListener 'drop', (e) ->
+		e.stopPropagation();
+		e.preventDefault();
+		file = e.dataTransfer.files[0]
+
+		reader = new FileReader
+
+		reader.onload = (e) ->
+			console.log e
+			Editor.$curEditor.setValue e.target.result
+			Editor.$curEditor.gotoLine(1)
+
+		reader.readAsText file
+
+		console.log "Droping..."
+
+	document.addEventListener 'dragover', (e)->
+		e.stopPropagation();
+		e.preventDefault();
+		console.log "Dragging..."

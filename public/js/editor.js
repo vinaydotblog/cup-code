@@ -6,7 +6,6 @@
 
 define(['ace/ace', 'ace/snippets', 'defaults', 'libs/emmet', 'ace/ext/emmet', 'jquery'], function(ace, snip, defaults, em, emrjs, $) {
   var Editor, user_defaults;
-  $('#content').height('555px');
   user_defaults = {};
   defaults = $.extend(defaults, user_defaults);
   window.snip = snip;

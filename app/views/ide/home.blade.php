@@ -25,7 +25,7 @@
 		@include('ide/open_project')
 
 		<!-- Context Menu -->
-		<!-- @include('ide/contextmenu') -->
+		@include('ide/contextmenu')
 
 		<div id="content_wrapper" class="content-warpper">
 

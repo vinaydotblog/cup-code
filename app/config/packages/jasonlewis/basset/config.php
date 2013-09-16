@@ -25,7 +25,7 @@ return array(
     | You can overwrite this collection or remove it by publishing the config.
     |
     */
-
+    
     'collections' => array(
 
         'application' => function($collection)
@@ -90,6 +90,18 @@ return array(
     */
 
     'build_path' => 'builds',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Debug
+    |--------------------------------------------------------------------------
+    |
+    | Enable debugging to have potential errors or problems encountered
+    | during operation logged to a rotating file setup.
+    |
+    */
+
+    'debug' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -214,7 +226,7 @@ return array(
 
             'CssMin' => array('CssMinFilter', function($filter)
             {
-                $filter->whenEnvironmentIs('production', 'prod')->whenClassExists('CssMin');
+                $filter->whenAssetIsStylesheet()->whenProductionBuild()->whenClassExists('CssMin');
             }),
 
             /*
@@ -227,9 +239,9 @@ return array(
             |
             */
 
-            'JsMin' => array('JsMinFilter', function($filter)
+            'JsMin' => array('JSMinFilter', function($filter)
             {
-                $filter->whenEnvironmentIs('production', 'prod')->whenClassExists('JsMin');
+                $filter->whenAssetIsJavascript()->whenProductionBuild()->whenClassExists('JSMin');
             }),
 
             /*
@@ -243,7 +255,7 @@ return array(
 
             'UriRewriteFilter' => array('UriRewriteFilter', function($filter)
             {
-                $filter->setArguments(public_path());
+                $filter->setArguments(public_path())->whenAssetIsStylesheet();
             })
 
         )

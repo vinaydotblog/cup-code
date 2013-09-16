@@ -23,7 +23,7 @@ class FS
 			$fl = array();
 
 			foreach( $dirs as $file ) {
-				if($file != '.' && $file != '..' ) {
+				if(substr($file, 0, 1) != '.') {
 					if(  is_dir( $dir . DS . $file ) ) {
 						$fl[ $file ] = direcoty_handler( $dir . DS . $file, $base . $file . DS );
 					} else {

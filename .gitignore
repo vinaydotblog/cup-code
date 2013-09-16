@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 /bootstrap/compiled.php
 /vendor
 composer.phar
 composer.lock
 .DS_Store
-=======
 *.sass-cache
 *.dll
+IDE.sublime-project
+IDE.sublime-workspace
 css/.sass-cache/
->>>>>>> dd75a61c073460035a861843c3ae8af8c9513074

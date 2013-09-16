@@ -15,6 +15,7 @@ require.config({
 
 require(['jquery', 'editor', 'libs/jwerty', 'components/modal', 'modules/cmd', 'modules/notify', 'modules/log', 'modules/filesystem', 'modules/filemenu', 'modules/server_fs', 'modules/tdi', 'modules/req'], function($, editor, jw, modal, cmd, noty, log, fs, fm, tdi, req) {
   editor.add("first_document");
+  $('#content').height($(window).height() - 75);
   jwerty.key("ctrl+1", function() {
     return editor.increaseFont();
   });
@@ -23,7 +24,26 @@ require(['jquery', 'editor', 'libs/jwerty', 'components/modal', 'modules/cmd', '
   });
   $('#file-menu').appendTo('body').show();
   $('#content_wrapper').tabbed();
-  return cmd.define('open_project', function() {
+  cmd.define('open_project', function() {
     return $('#open_project').modal('show');
+  });
+  document.addEventListener('drop', function(e) {
+    var file, reader;
+    e.stopPropagation();
+    e.preventDefault();
+    file = e.dataTransfer.files[0];
+    reader = new FileReader;
+    reader.onload = function(e) {
+      console.log(e);
+      Editor.$curEditor.setValue(e.target.result);
+      return Editor.$curEditor.gotoLine(1);
+    };
+    reader.readAsText(file);
+    return console.log("Droping...");
+  });
+  return document.addEventListener('dragover', function(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    return console.log("Dragging...");
   });
 });

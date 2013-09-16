@@ -2,7 +2,7 @@
 
 class DocsController extends BaseController {
 
-	protected $layout = 'docs.layout';
+	protected $layout = 'layouts.winter';
 
 	/**
 	 * Display a listing of the resource.
@@ -13,6 +13,11 @@ class DocsController extends BaseController {
 	{
 		$this->layout->content = View::make('docs.home');
 		// return View::make('docs.home');
+	}
+
+	public function getLogin()
+	{
+		$this->layout->content = View::make('docs.login');
 	}
 
 	public function getNew()

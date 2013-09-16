@@ -13,8 +13,6 @@ define [
 
 (ace, snip, defaults, em, emrjs, $) ->
 
-	$('#content').height('555px');
-
 	user_defaults = {} # simulate user's default settings
 
 	defaults = $.extend defaults, user_defaults # Extend with user's given defaults
