@@ -25,21 +25,6 @@ Route::resource('file', 'FilesController');
  */
 Route::controller('docs', 'DocsController');
 
-	
-
-/*
- * Elephant IO...To give it a try
- */
-Route::get('elephant', function(){
-
-	$elephant = new Elephant('http://localhost:3000', 'socket.io', 1, false, true, false);
-
-	$elephant->init();
-	$elephant->close();
-
-	echo 'tryin to send `bar` to the event `foo`';
-	                        
-});
 
 /*
  * Good to keep some info
