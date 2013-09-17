@@ -28,7 +28,8 @@ $app->redirectIfTrailingSlash();
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+	'stag' => array('cup-code'),
+	'local' => array('localhost')
 
 ));
 

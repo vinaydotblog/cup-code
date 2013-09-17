@@ -31,8 +31,10 @@ Route::controller('docs', 'DocsController');
  */
 Route::get('info',function(){ echo phpinfo(); });
 
-
-
+/* Just a test */
+Route::get('test', function(){
+	return App::environment();
+});
 
 
 

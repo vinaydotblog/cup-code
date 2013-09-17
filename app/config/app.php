@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://cup-code/index.php/',
+	'url' => 'http://cup-asdfl/index.php/',
 
 	/*
 	|--------------------------------------------------------------------------

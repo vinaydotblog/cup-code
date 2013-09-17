@@ -8,3 +8,4 @@ composer.lock
 IDE.sublime-project
 IDE.sublime-workspace
 css/.sass-cache/
+*.coffee
