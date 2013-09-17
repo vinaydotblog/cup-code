@@ -65,13 +65,15 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'cup-code',
-			'username' => 'vinay',
-			'password' => 'hello',
+			'host'     => 'ec2-107-21-120-102.compute-1.amazonaws.com',
+			'database' => 'dagamf845c7sck',
+			'username' => 'odzcjhvejbptjr',
+			'password' => '_IcuLDprkeFPZE36RUlrUPG7C9',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
+			'port'	   => 5432,
+			'sslmode'  => 'require'
 		),
 
 		'sqlsrv' => array(
