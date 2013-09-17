@@ -30,7 +30,7 @@ define(['jquery', 'underscore', 'backbone', 'editor'], function($, _, B, editor)
     Project.prototype.urlRoot = Settings.server;
 
     Project.prototype.url = function() {
-      return this.urlRoot + "projects/" + this.get('id');
+      return this.urlRoot + "index.php/projects/" + this.get('id');
     };
 
     return Project;
