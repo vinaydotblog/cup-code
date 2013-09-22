@@ -67,3 +67,24 @@ PHP message: PHP  11. Illuminate\Container\Container->offsetGet() /var/www/IDE/v
 PHP message: PHP  12. Illuminate\Foundation\Application->make() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Container/Container.php:497
 PHP message: PHP  13. Illuminate\Container\Container->make() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/Application.php:434
 PHP message: PHP  14. Illuminate\Container\Container->build() /var/
+2013/09/22 14:39:17 [error] 1760#0: *451 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /var/www/IDE/app/routes.php on line 33
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. require_once() /var/www/IDE/public/index.php:35
+PHP message: PHP   3. require() /var/www/IDE/bootstrap/start.php:62" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/09/22 14:39:29 [error] 1760#0: *451 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Illuminate\Routing\Router::all() in /var/www/IDE/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 180
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. require_once() /var/www/IDE/public/index.php:35
+PHP message: PHP   3. require() /var/www/IDE/bootstrap/start.php:62
+PHP message: PHP   4. require() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/start.php:253
+PHP message: PHP   5. Illuminate\Support\Facades\Route::all() /var/www/IDE/app/routes.php:28
+PHP message: PHP   6. Illuminate\Support\Facades\Facade::__callStatic() /var/www/IDE/app/routes.php:28" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /js/ace/ext/emmet.js HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"
+2013/09/22 14:39:31 [error] 1760#0: *451 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to undefined method Illuminate\Routing\Router::all() in /var/www/IDE/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 180
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/IDE/public/index.php:0
+PHP message: PHP   2. require_once() /var/www/IDE/public/index.php:35
+PHP message: PHP   3. require() /var/www/IDE/bootstrap/start.php:62
+PHP message: PHP   4. require() /var/www/IDE/vendor/laravel/framework/src/Illuminate/Foundation/start.php:253
+PHP message: PHP   5. Illuminate\Support\Facades\Route::all() /var/www/IDE/app/routes.php:28
+PHP message: PHP   6. Illuminate\Support\Facades\Facade::__callStatic() /var/www/IDE/app/routes.php:28" while reading response header from upstream, client: 127.0.0.1, server: cup-code, request: "GET /js/ace/ext/emmet.js HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "cup-code"

@@ -21,6 +21,19 @@ Route::resource('cup-code', 'CupCodeController');
 Route::resource('file', 'FilesController');
 
 /*
+ * Not my business
+ */
+Route::get('{all}', function(){
+	return "alert(Well, i guess, you are landed to a wrong place);";
+})->where('all', '(js|css).*');
+
+/*
+ * Auth
+ */
+Route::controller('auth', 'AuthController');
+
+
+/*
  * Documentation Is required
  */
 Route::controller('docs', 'DocsController');
@@ -30,6 +43,7 @@ Route::controller('docs', 'DocsController');
  * Good to keep some info
  */
 Route::get('info',function(){ echo phpinfo(); });
+Route::controller('vcs', 'VcsController');
 
 /* Just a test */
 Route::get('test', function(){
