@@ -1,4 +1,4 @@
-# Cup Code
+# Cup Code ( Currently in developmnet )
 
 Cup code in online IDE inspired by [cloud9](https://github.com/ajaxorg/cloud9/), currently in alpha phase. The purpose of this project is to add more fun and ease of work in todays web development workflow.
 
